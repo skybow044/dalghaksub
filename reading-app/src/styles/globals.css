@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html,
+body {
+  font-feature-settings: 'kern';
+  font-kerning: normal;
+  min-height: 100%;
+}
+
+body {
+  @apply font-sans bg-surface text-foreground antialiased transition-colors;
+}
+
+.prose {
+  @apply text-base leading-relaxed;
+}
+
+.prose p {
+  @apply text-zinc-700 dark:text-zinc-200;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 120, 130, 0.45);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html[dir='rtl'] body {
+  direction: rtl;
+}
+
+html[dir='rtl'] .prose {
+  text-align: right;
+}
+
+html[dir='rtl'] .prose p {
+  @apply text-right;
+}

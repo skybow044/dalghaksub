@@ -1,0 +1,44 @@
+{
+  "loading": "Loading…",
+  "app": {
+    "title": "Lecture Reader"
+  },
+  "reader": {
+    "title": "Transcript",
+    "load": "Load document",
+    "empty": "Select a transcript file (.txt or .json) to start reading.",
+    "selected": "Selected text",
+    "highlight": "Highlight",
+    "clear": "Clear document"
+  },
+  "summary": {
+    "title": "Summaries",
+    "empty": "No summaries yet. Add one from Settings."
+  },
+  "highlights": {
+    "title": "Highlights",
+    "empty": "No highlights yet. Click a paragraph or highlighted selection to save it.",
+    "remove": "Remove"
+  },
+  "settings": {
+    "title": "Reader settings",
+    "description": "Manage summaries and preferences.",
+    "add": "Add summary",
+    "label": "Label",
+    "content": "Content",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "progress": {
+    "label": "Progress"
+  },
+  "language": {
+    "toggle": "Language",
+    "english": "English",
+    "persian": "Persian"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
