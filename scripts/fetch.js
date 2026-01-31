@@ -11,6 +11,8 @@ const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
 const CONFIG_LINE_REGEX = /^(?:vless|trojan|ss):\/\//i;
 const FLAG_TAG_SUFFIX = 't.me/ConfigsHub';
 const DEFAULT_FLAG = '🏁';
+const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss):\/\//i;
+const FLAG_TAG_SUFFIX = 't.me/v2ray_dalghak';
 
 const isValidIp = (value) => {
   const parts = value.split('.').map((part) => Number(part));
@@ -59,10 +61,14 @@ const appendFlag = async (line) => {
 
   const [ip] = extractIps(line);
 
-  const code = ip ? await fetchCountryCode(ip) : null;
-  const flag = countryCodeToFlag(code) ?? DEFAULT_FLAG;
+  if (!ip) {
+    return line;
+  }
 
-  if (line.includes('#[') && line.includes(FLAG_TAG_SUFFIX)) {
+  const code = await fetchCountryCode(ip);
+  const flag = countryCodeToFlag(code);
+
+  if (!flag || line.includes(`#[${flag}]`)) {
     return line;
   }
 
