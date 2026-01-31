@@ -9,3 +9,4 @@ sessions/
 reading-app/node_modules/
 .venv/
 .pytest_cache/
+node_modules/
