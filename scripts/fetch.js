@@ -34,17 +34,22 @@ const fetchCountryCode = async (ip) => {
     return ipCache.get(ip);
   }
 
-  const response = await fetch(`${GEOIP_ENDPOINT}/${ip}?fields=status,countryCode`);
+  try {
+    const response = await fetch(`${GEOIP_ENDPOINT}/${ip}?fields=status,countryCode`);
 
-  if (!response.ok) {
+    if (!response.ok) {
+      ipCache.set(ip, null);
+      return null;
+    }
+
+    const data = await response.json();
+    const code = data?.status === 'success' ? data.countryCode : null;
+    ipCache.set(ip, code);
+    return code;
+  } catch (error) {
     ipCache.set(ip, null);
     return null;
   }
-
-  const data = await response.json();
-  const code = data?.status === 'success' ? data.countryCode : null;
-  ipCache.set(ip, code);
-  return code;
 };
 
 const extractIps = (line) => {
