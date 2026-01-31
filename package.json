@@ -1,0 +1,10 @@
+{
+  "name": "telegram-channel-scraper",
+  "version": "1.0.0",
+  "description": "Scrape Telegram channel messages into sub.txt for GitHub Pages.",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
