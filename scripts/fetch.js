@@ -64,8 +64,16 @@ const appendFlag = async (line) => {
 
   const [ip] = extractIps(line);
 
-  const code = ip ? await fetchCountryCode(ip) : null;
-  const flag = countryCodeToFlag(code) ?? DEFAULT_FLAG;
+  let flag = DEFAULT_FLAG;
+
+  if (ip) {
+    try {
+      const code = await fetchCountryCode(ip);
+      flag = countryCodeToFlag(code) ?? DEFAULT_FLAG;
+    } catch (error) {
+      flag = DEFAULT_FLAG;
+    }
+  }
 
   if (line.includes('#[') && line.includes(FLAG_TAG_SUFFIX)) {
     return line;
