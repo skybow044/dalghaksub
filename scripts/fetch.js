@@ -140,6 +140,14 @@ const writeOutput = async (messages, outputPath) => {
 const parseArgs = (args) => {
   const parsed = {};
 
+  const readValue = (argName, value) => {
+    if (!value || value.startsWith('--')) {
+      throw new Error(`Missing value for ${argName}.`);
+    }
+
+    return value;
+  };
+
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
 
@@ -149,7 +157,7 @@ const parseArgs = (args) => {
     }
 
     if (arg === '--channel') {
-      parsed.channel = args[index + 1];
+      parsed.channel = readValue('--channel', args[index + 1]);
       index += 1;
       continue;
     }
@@ -160,7 +168,7 @@ const parseArgs = (args) => {
     }
 
     if (arg === '--output') {
-      parsed.output = args[index + 1];
+      parsed.output = readValue('--output', args[index + 1]);
       index += 1;
       continue;
     }
@@ -171,7 +179,7 @@ const parseArgs = (args) => {
     }
 
     if (arg === '--count') {
-      parsed.count = args[index + 1];
+      parsed.count = readValue('--count', args[index + 1]);
       index += 1;
       continue;
     }
