@@ -3,8 +3,9 @@ import path from 'node:path';
 import process from 'node:process';
 import { load } from 'cheerio';
 
-const CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
-const OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
+const DEFAULT_CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
+const DEFAULT_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
+const DEFAULT_MESSAGE_COUNT = 10;
 const MESSAGE_SEPARATOR = '\n\n-----\n\n';
 const GEOIP_ENDPOINT = 'http://ip-api.com/json';
 const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
@@ -79,7 +80,7 @@ const normalizeMessage = (html) => {
   return $fragment('div').text().replace(/\r\n/g, '\n').trim();
 };
 
-const extractMessages = (html) => {
+const extractMessages = (html, messageCount) => {
   const $ = load(html);
   const messageNodes = $('.tgme_widget_message_text');
 
@@ -96,7 +97,7 @@ const extractMessages = (html) => {
     throw new Error('No non-empty messages extracted.');
   }
 
-  return messages.slice(-10);
+  return messages.slice(-messageCount);
 };
 
 const annotateMessages = async (messages) => {
@@ -116,8 +117,8 @@ const annotateMessages = async (messages) => {
   return annotated;
 };
 
-const fetchHtml = async () => {
-  const response = await fetch(CHANNEL_URL, {
+const fetchHtml = async (channelUrl) => {
+  const response = await fetch(channelUrl, {
     headers: {
       'User-Agent':
         'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36',
@@ -125,24 +126,101 @@ const fetchHtml = async () => {
   });
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch ${CHANNEL_URL}. Status: ${response.status}`);
+    throw new Error(`Failed to fetch ${channelUrl}. Status: ${response.status}`);
   }
 
   return response.text();
 };
 
-const writeOutput = async (messages) => {
+const writeOutput = async (messages, outputPath) => {
   const content = `${messages.join(MESSAGE_SEPARATOR)}\n`;
-  await fs.writeFile(OUTPUT_PATH, content, 'utf8');
+  await fs.writeFile(outputPath, content, 'utf8');
+};
+
+const parseArgs = (args) => {
+  const parsed = {};
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+
+    if (arg.startsWith('--channel=')) {
+      parsed.channel = arg.slice('--channel='.length);
+      continue;
+    }
+
+    if (arg === '--channel') {
+      parsed.channel = args[index + 1];
+      index += 1;
+      continue;
+    }
+
+    if (arg.startsWith('--output=')) {
+      parsed.output = arg.slice('--output='.length);
+      continue;
+    }
+
+    if (arg === '--output') {
+      parsed.output = args[index + 1];
+      index += 1;
+      continue;
+    }
+
+    if (arg.startsWith('--count=')) {
+      parsed.count = arg.slice('--count='.length);
+      continue;
+    }
+
+    if (arg === '--count') {
+      parsed.count = args[index + 1];
+      index += 1;
+      continue;
+    }
+  }
+
+  return parsed;
+};
+
+const resolveOptions = () => {
+  const cliArgs = parseArgs(process.argv.slice(2));
+  const envChannel = process.env.CHANNEL_URL?.trim();
+  const envOutput = process.env.OUTPUT_PATH?.trim();
+  const envCount = process.env.MESSAGE_COUNT?.trim();
+
+  const channelUrl = cliArgs.channel ?? envChannel ?? DEFAULT_CHANNEL_URL;
+  const outputPath = cliArgs.output ?? envOutput ?? DEFAULT_OUTPUT_PATH;
+  const countRaw = cliArgs.count ?? envCount ?? DEFAULT_MESSAGE_COUNT;
+  const messageCount =
+    typeof countRaw === 'number' ? countRaw : Number.parseInt(String(countRaw), 10);
+
+  if (!channelUrl || typeof channelUrl !== 'string') {
+    throw new Error('Invalid CHANNEL_URL: provide a non-empty string.');
+  }
+
+  if (!outputPath || typeof outputPath !== 'string') {
+    throw new Error('Invalid OUTPUT_PATH: provide a non-empty string.');
+  }
+
+  if (!Number.isInteger(messageCount) || messageCount <= 0) {
+    throw new Error('Invalid MESSAGE_COUNT: provide a positive integer.');
+  }
+
+  return {
+    channelUrl,
+    outputPath: path.isAbsolute(outputPath)
+      ? outputPath
+      : path.join(process.cwd(), outputPath),
+    messageCount,
+  };
 };
 
 const main = async () => {
   try {
-    const html = await fetchHtml();
-    const messages = extractMessages(html);
+    const { channelUrl, outputPath, messageCount } = resolveOptions();
+    const html = await fetchHtml(channelUrl);
+    const messages = extractMessages(html, messageCount);
     const annotatedMessages = await annotateMessages(messages);
-    await writeOutput(annotatedMessages);
-    console.log(`Wrote ${messages.length} messages to ${OUTPUT_PATH}.`);
+    await writeOutput(annotatedMessages, outputPath);
+    console.log(`Wrote ${messages.length} messages to ${outputPath}.`);
   } catch (error) {
     console.error('Failed to generate sub.txt.');
     console.error(error instanceof Error ? error.message : error);
