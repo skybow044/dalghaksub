@@ -23,6 +23,7 @@ const isValidIp = (value) => {
 
 const ipCache = new Map();
 let maxmindReader;
+let maxmindFailed = false;
 
 const countryCodeToFlag = (code) => {
   if (!code || code.length !== 2) {
@@ -56,18 +57,29 @@ const ensureDatabase = async (dbPath, dbUrl) => {
 };
 
 const getMaxMindReader = async (dbPath, dbUrl) => {
-  if (maxmindReader) {
+  if (maxmindReader || maxmindFailed) {
     return maxmindReader;
   }
 
-  await ensureDatabase(dbPath, dbUrl);
-  maxmindReader = await maxmind.open(dbPath);
-  return maxmindReader;
+  try {
+    await ensureDatabase(dbPath, dbUrl);
+    maxmindReader = await maxmind.open(dbPath);
+    return maxmindReader;
+  } catch (error) {
+    maxmindFailed = true;
+    console.warn('MaxMind database unavailable; continuing without flags.');
+    return null;
+  }
 };
 
 const fetchCountryCode = async (ip, reader) => {
   if (ipCache.has(ip)) {
     return ipCache.get(ip);
+  }
+
+  if (!reader) {
+    ipCache.set(ip, null);
+    return null;
   }
 
   const record = reader.get(ip);
@@ -81,7 +93,7 @@ const extractIps = (line) => {
   return matches.filter(isValidIp);
 };
 
-const appendFlag = async (line, reader) => {
+const appendFlag = async (line, readerResolver) => {
   if (!CONFIG_LINE_REGEX.test(line)) {
     return line;
   }
@@ -92,6 +104,7 @@ const appendFlag = async (line, reader) => {
     return line;
   }
 
+  const reader = await readerResolver();
   const code = await fetchCountryCode(ip, reader);
   const flag = countryCodeToFlag(code);
 
@@ -128,7 +141,7 @@ const extractMessages = (html, messageCount) => {
   return messages.slice(-messageCount);
 };
 
-const annotateMessages = async (messages, reader) => {
+const annotateMessages = async (messages, readerResolver) => {
   const annotated = [];
 
   for (const message of messages) {
@@ -136,7 +149,7 @@ const annotateMessages = async (messages, reader) => {
     const updatedLines = [];
 
     for (const line of lines) {
-      updatedLines.push(await appendFlag(line, reader));
+      updatedLines.push(await appendFlag(line, readerResolver));
     }
 
     annotated.push(updatedLines.join('\n'));
@@ -258,10 +271,10 @@ const resolveOptions = () => {
 const main = async () => {
   try {
     const { channelUrl, outputPath, messageCount, dbPath, dbUrl } = resolveOptions();
-    const reader = await getMaxMindReader(dbPath, dbUrl);
+    const readerResolver = () => getMaxMindReader(dbPath, dbUrl);
     const html = await fetchHtml(channelUrl);
     const messages = extractMessages(html, messageCount);
-    const annotatedMessages = await annotateMessages(messages, reader);
+    const annotatedMessages = await annotateMessages(messages, readerResolver);
     await writeOutput(annotatedMessages, outputPath);
     console.log(`Wrote ${messages.length} messages to ${outputPath}.`);
   } catch (error) {
