@@ -2,12 +2,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { load } from 'cheerio';
+import maxmind from 'maxmind';
 
 const DEFAULT_CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
 const DEFAULT_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const DEFAULT_MESSAGE_COUNT = 10;
 const MESSAGE_SEPARATOR = '\n\n-----\n\n';
-const GEOIP_ENDPOINT = 'http://ip-api.com/json';
+const DEFAULT_MAXMIND_DB_URL =
+  'https://github.com/P3TERX/GeoLite.mmdb/releases/download/2026.01.31/GeoLite2-Country.mmdb';
+const DEFAULT_MAXMIND_DB_PATH = path.join(process.cwd(), 'data', 'GeoLite2-Country.mmdb');
 const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
 const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss):\/\//i;
 const FLAG_TAG_SUFFIX = 't.me/v2ray_dalghak';
@@ -19,6 +22,7 @@ const isValidIp = (value) => {
 };
 
 const ipCache = new Map();
+let maxmindReader;
 
 const countryCodeToFlag = (code) => {
   if (!code || code.length !== 2) {
@@ -30,20 +34,44 @@ const countryCodeToFlag = (code) => {
   return String.fromCodePoint(base + chars[0].charCodeAt(0) - 65, base + chars[1].charCodeAt(0) - 65);
 };
 
-const fetchCountryCode = async (ip) => {
+const ensureDatabase = async (dbPath, dbUrl) => {
+  try {
+    await fs.access(dbPath);
+    return;
+  } catch (error) {
+    if (error?.code !== 'ENOENT') {
+      throw error;
+    }
+  }
+
+  await fs.mkdir(path.dirname(dbPath), { recursive: true });
+  const response = await fetch(dbUrl);
+
+  if (!response.ok) {
+    throw new Error(`Failed to download MaxMind database. Status: ${response.status}`);
+  }
+
+  const buffer = Buffer.from(await response.arrayBuffer());
+  await fs.writeFile(dbPath, buffer);
+};
+
+const getMaxMindReader = async (dbPath, dbUrl) => {
+  if (maxmindReader) {
+    return maxmindReader;
+  }
+
+  await ensureDatabase(dbPath, dbUrl);
+  maxmindReader = await maxmind.open(dbPath);
+  return maxmindReader;
+};
+
+const fetchCountryCode = async (ip, reader) => {
   if (ipCache.has(ip)) {
     return ipCache.get(ip);
   }
 
-  const response = await fetch(`${GEOIP_ENDPOINT}/${ip}?fields=status,countryCode`);
-
-  if (!response.ok) {
-    ipCache.set(ip, null);
-    return null;
-  }
-
-  const data = await response.json();
-  const code = data?.status === 'success' ? data.countryCode : null;
+  const record = reader.get(ip);
+  const code = record?.country?.iso_code ?? record?.registered_country?.iso_code ?? null;
   ipCache.set(ip, code);
   return code;
 };
@@ -53,7 +81,7 @@ const extractIps = (line) => {
   return matches.filter(isValidIp);
 };
 
-const appendFlag = async (line) => {
+const appendFlag = async (line, reader) => {
   if (!CONFIG_LINE_REGEX.test(line)) {
     return line;
   }
@@ -64,7 +92,7 @@ const appendFlag = async (line) => {
     return line;
   }
 
-  const code = await fetchCountryCode(ip);
+  const code = await fetchCountryCode(ip, reader);
   const flag = countryCodeToFlag(code);
 
   if (!flag || line.includes(`#[${flag}]`)) {
@@ -100,7 +128,7 @@ const extractMessages = (html, messageCount) => {
   return messages.slice(-messageCount);
 };
 
-const annotateMessages = async (messages) => {
+const annotateMessages = async (messages, reader) => {
   const annotated = [];
 
   for (const message of messages) {
@@ -108,7 +136,7 @@ const annotateMessages = async (messages) => {
     const updatedLines = [];
 
     for (const line of lines) {
-      updatedLines.push(await appendFlag(line));
+      updatedLines.push(await appendFlag(line, reader));
     }
 
     annotated.push(updatedLines.join('\n'));
@@ -193,9 +221,13 @@ const resolveOptions = () => {
   const envChannel = process.env.CHANNEL_URL?.trim();
   const envOutput = process.env.OUTPUT_PATH?.trim();
   const envCount = process.env.MESSAGE_COUNT?.trim();
+  const envDbPath = process.env.MAXMIND_DB_PATH?.trim();
+  const envDbUrl = process.env.MAXMIND_DB_URL?.trim();
 
   const channelUrl = cliArgs.channel ?? envChannel ?? DEFAULT_CHANNEL_URL;
   const outputPath = cliArgs.output ?? envOutput ?? DEFAULT_OUTPUT_PATH;
+  const dbPath = envDbPath ?? DEFAULT_MAXMIND_DB_PATH;
+  const dbUrl = envDbUrl ?? DEFAULT_MAXMIND_DB_URL;
   const countRaw = cliArgs.count ?? envCount ?? DEFAULT_MESSAGE_COUNT;
   const messageCount =
     typeof countRaw === 'number' ? countRaw : Number.parseInt(String(countRaw), 10);
@@ -217,16 +249,19 @@ const resolveOptions = () => {
     outputPath: path.isAbsolute(outputPath)
       ? outputPath
       : path.join(process.cwd(), outputPath),
+    dbPath: path.isAbsolute(dbPath) ? dbPath : path.join(process.cwd(), dbPath),
+    dbUrl,
     messageCount,
   };
 };
 
 const main = async () => {
   try {
-    const { channelUrl, outputPath, messageCount } = resolveOptions();
+    const { channelUrl, outputPath, messageCount, dbPath, dbUrl } = resolveOptions();
+    const reader = await getMaxMindReader(dbPath, dbUrl);
     const html = await fetchHtml(channelUrl);
     const messages = extractMessages(html, messageCount);
-    const annotatedMessages = await annotateMessages(messages);
+    const annotatedMessages = await annotateMessages(messages, reader);
     await writeOutput(annotatedMessages, outputPath);
     console.log(`Wrote ${messages.length} messages to ${outputPath}.`);
   } catch (error) {
