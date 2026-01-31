@@ -30,6 +30,16 @@
 https://<username>.github.io/<repo>/sub.txt
 ```
 
+فرمت لینک سابسکریپشن:
+```
+sub://https://<username>.github.io/<repo>/sub.txt
+```
+
+لینک سابسکریپشن برای این ریپو:
+```
+sub://https://skybow044.github.io/dalghaksub/sub.txt
+```
+
 ## تست با curl
 ```bash
 curl -L https://<username>.github.io/<repo>/sub.txt

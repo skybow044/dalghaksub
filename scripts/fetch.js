@@ -8,6 +8,9 @@ const OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const MESSAGE_SEPARATOR = '\n\n-----\n\n';
 const GEOIP_ENDPOINT = 'http://ip-api.com/json';
 const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
+const CONFIG_LINE_REGEX = /^(?:vless|trojan|ss):\/\//i;
+const FLAG_TAG_SUFFIX = 't.me/ConfigsHub';
+const DEFAULT_FLAG = '🏁';
 const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss):\/\//i;
 const FLAG_TAG_SUFFIX = 't.me/v2ray_dalghak';
 
