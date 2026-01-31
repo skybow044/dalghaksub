@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
 
 const CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
 const OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
@@ -9,12 +9,12 @@ const MESSAGE_SEPARATOR = '\n\n-----\n\n';
 
 const normalizeMessage = (html) => {
   const withBreaks = html.replace(/<br\s*\/?\s*>/gi, '\n');
-  const $fragment = cheerio.load(`<div>${withBreaks}</div>`);
+  const $fragment = load(`<div>${withBreaks}</div>`);
   return $fragment('div').text().replace(/\r\n/g, '\n').trim();
 };
 
 const extractMessages = (html) => {
-  const $ = cheerio.load(html);
+  const $ = load(html);
   const messageNodes = $('.tgme_widget_message_text');
 
   if (!messageNodes.length) {
