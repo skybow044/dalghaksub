@@ -7,12 +7,11 @@ import maxmind from 'maxmind';
 const DEFAULT_CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
 const DEFAULT_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const DEFAULT_MESSAGE_COUNT = 10;
-const MESSAGE_SEPARATOR = '\n\n-----\n\n';
 const DEFAULT_MAXMIND_DB_URL =
   'https://github.com/P3TERX/GeoLite.mmdb/releases/download/2026.01.31/GeoLite2-Country.mmdb';
 const DEFAULT_MAXMIND_DB_PATH = path.join(process.cwd(), 'data', 'GeoLite2-Country.mmdb');
 const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
-const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss):\/\//i;
+const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss|hysteria2):\/\//i;
 const FLAG_TAG_SUFFIX = 't.me/v2ray_dalghak';
 const DEFAULT_FLAG = '🏁';
 
@@ -149,13 +148,28 @@ const annotateMessages = async (messages, readerResolver) => {
     const updatedLines = [];
 
     for (const line of lines) {
-      updatedLines.push(await appendFlag(line, readerResolver));
+      updatedLines.push(await appendFlag(line.trim(), readerResolver));
     }
 
     annotated.push(updatedLines.join('\n'));
   }
 
   return annotated;
+};
+
+const collectConfigLines = (messages) => {
+  const lines = [];
+
+  for (const message of messages) {
+    for (const line of message.split('\n')) {
+      const trimmed = line.trim();
+      if (CONFIG_LINE_REGEX.test(trimmed)) {
+        lines.push(trimmed);
+      }
+    }
+  }
+
+  return lines;
 };
 
 const fetchHtml = async (channelUrl) => {
@@ -173,8 +187,8 @@ const fetchHtml = async (channelUrl) => {
   return response.text();
 };
 
-const writeOutput = async (messages, outputPath) => {
-  const content = `${messages.join(MESSAGE_SEPARATOR)}\n`;
+const writeOutput = async (lines, outputPath) => {
+  const content = lines.length ? `${lines.join('\n')}\n` : '';
   await fs.writeFile(outputPath, content, 'utf8');
 };
 
@@ -275,7 +289,8 @@ const main = async () => {
     const html = await fetchHtml(channelUrl);
     const messages = extractMessages(html, messageCount);
     const annotatedMessages = await annotateMessages(messages, readerResolver);
-    await writeOutput(annotatedMessages, outputPath);
+    const configLines = collectConfigLines(annotatedMessages);
+    await writeOutput(configLines, outputPath);
     console.log(`Wrote ${messages.length} messages to ${outputPath}.`);
   } catch (error) {
     console.error('Failed to generate sub.txt.');
