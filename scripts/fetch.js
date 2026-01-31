@@ -8,9 +8,11 @@ const OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const MESSAGE_SEPARATOR = '\n\n-----\n\n';
 const GEOIP_ENDPOINT = 'http://ip-api.com/json';
 const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
-const CONFIG_LINE_PATTERN = /^(?:vless|vmess|trojan|ss):\/\//i;
+const CONFIG_LINE_REGEX = /^(?:vless|trojan|ss):\/\//i;
 const FLAG_TAG_SUFFIX = 't.me/ConfigsHub';
 const DEFAULT_FLAG = '🏁';
+const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss):\/\//i;
+const FLAG_TAG_SUFFIX = 't.me/v2ray_dalghak';
 
 const isValidIp = (value) => {
   const parts = value.split('.').map((part) => Number(part));
@@ -34,22 +36,17 @@ const fetchCountryCode = async (ip) => {
     return ipCache.get(ip);
   }
 
-  try {
-    const response = await fetch(`${GEOIP_ENDPOINT}/${ip}?fields=status,countryCode`);
+  const response = await fetch(`${GEOIP_ENDPOINT}/${ip}?fields=status,countryCode`);
 
-    if (!response.ok) {
-      ipCache.set(ip, null);
-      return null;
-    }
-
-    const data = await response.json();
-    const code = data?.status === 'success' ? data.countryCode : null;
-    ipCache.set(ip, code);
-    return code;
-  } catch (error) {
+  if (!response.ok) {
     ipCache.set(ip, null);
     return null;
   }
+
+  const data = await response.json();
+  const code = data?.status === 'success' ? data.countryCode : null;
+  ipCache.set(ip, code);
+  return code;
 };
 
 const extractIps = (line) => {
@@ -58,24 +55,20 @@ const extractIps = (line) => {
 };
 
 const appendFlag = async (line) => {
-  if (!CONFIG_LINE_PATTERN.test(line)) {
+  if (!CONFIG_LINE_REGEX.test(line)) {
     return line;
   }
 
   const [ip] = extractIps(line);
 
-  let flag = DEFAULT_FLAG;
-
-  if (ip) {
-    try {
-      const code = await fetchCountryCode(ip);
-      flag = countryCodeToFlag(code) ?? DEFAULT_FLAG;
-    } catch (error) {
-      flag = DEFAULT_FLAG;
-    }
+  if (!ip) {
+    return line;
   }
 
-  if (line.includes('#[') && line.includes(FLAG_TAG_SUFFIX)) {
+  const code = await fetchCountryCode(ip);
+  const flag = countryCodeToFlag(code);
+
+  if (!flag || line.includes(`#[${flag}]`)) {
     return line;
   }
 
@@ -125,51 +118,6 @@ const annotateMessages = async (messages) => {
   return annotated;
 };
 
-const splitByProtocol = (messages) => {
-  const groups = {
-    vless: [],
-    vmess: [],
-    trojan: [],
-    ss: [],
-  };
-
-  for (const message of messages) {
-    const lines = message.split('\n').map((line) => line.trim()).filter(Boolean);
-
-    for (const line of lines) {
-      if (!CONFIG_LINE_PATTERN.test(line)) {
-        continue;
-      }
-
-      const match = line.match(/^(vless|vmess|trojan|ss):\/\//i);
-      const protocol = match?.[1]?.toLowerCase();
-
-      if (protocol && groups[protocol]) {
-        groups[protocol].push(line);
-      }
-    }
-  }
-
-  return groups;
-};
-
-const buildProtocolOutput = (groups) => {
-  const order = ['vless', 'vmess', 'trojan', 'ss'];
-  const sections = [];
-
-  for (const protocol of order) {
-    const lines = groups[protocol];
-    if (!lines || !lines.length) {
-      continue;
-    }
-
-    sections.push(`# ${protocol}`);
-    sections.push(...lines);
-  }
-
-  return sections.join('\n');
-};
-
 const fetchHtml = async () => {
   const response = await fetch(CHANNEL_URL, {
     headers: {
@@ -195,9 +143,7 @@ const main = async () => {
     const html = await fetchHtml();
     const messages = extractMessages(html);
     const annotatedMessages = await annotateMessages(messages);
-    const grouped = splitByProtocol(annotatedMessages);
-    const output = buildProtocolOutput(grouped);
-    await writeOutput(output ? [output] : []);
+    await writeOutput(annotatedMessages);
     console.log(`Wrote ${messages.length} messages to ${OUTPUT_PATH}.`);
   } catch (error) {
     console.error('Failed to generate sub.txt.');
