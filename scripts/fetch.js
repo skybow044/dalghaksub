@@ -6,7 +6,7 @@ import maxmind from 'maxmind';
 
 const DEFAULT_CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
 const DEFAULT_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
-const DEFAULT_MESSAGE_COUNT = 10;
+const DEFAULT_MESSAGE_COUNT = 20;
 const MESSAGE_SEPARATOR = '\n\n-----\n\n';
 const DEFAULT_MAXMIND_DB_URL =
   'https://github.com/P3TERX/GeoLite.mmdb/releases/download/2026.01.31/GeoLite2-Country.mmdb';
