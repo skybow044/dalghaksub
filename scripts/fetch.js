@@ -8,6 +8,17 @@ const DEFAULT_MESSAGE_COUNT = 100;
 const DEFAULT_NORMAL_OUTPUT_PATH = path.join(process.cwd(), 'normal.txt');
 const DEFAULT_SUB_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const SHARE_LINK_REGEX = /^\s*(vmess|vless|trojan|ss|ssr):\/\/\S+/gim;
+const VMESS_BASE64_REGEX = /^[A-Za-z0-9+/=_-]+$/;
+
+const isValidVmessLegacyLink = (link) => {
+  const payload = link.slice('vmess://'.length).split(/[?#]/, 1)[0].trim();
+
+  if (!payload) {
+    return false;
+  }
+
+  return VMESS_BASE64_REGEX.test(payload);
+};
 
 const normalizeMessage = (html) => {
   const withBreaks = html.replace(/<br\s*\/?\s*>/gi, '\n');
@@ -59,6 +70,10 @@ const isValidShareLink = (link) => {
 
   if (protocol === 'ss' || protocol === 'ssr') {
     return true;
+  }
+
+  if (protocol === 'vmess') {
+    return isValidHostPortLink(link) || isValidVmessLegacyLink(link);
   }
 
   return isValidHostPortLink(link);
