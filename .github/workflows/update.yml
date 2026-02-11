@@ -34,6 +34,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sub.txt
-          git commit -m "Update sub.txt"
+          git add normal.txt sub.txt
+          git commit -m "Update subscription files"
           git push

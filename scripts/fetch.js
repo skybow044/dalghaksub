@@ -2,117 +2,24 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { load } from 'cheerio';
-import maxmind from 'maxmind';
 
 const DEFAULT_CHANNEL_URL = 'https://t.me/s/v2ray_dalghak';
-const DEFAULT_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const DEFAULT_MESSAGE_COUNT = 100;
-const MESSAGE_SEPARATOR = '\n\n-----\n\n';
-const DEFAULT_MAXMIND_DB_URL =
-  'https://github.com/P3TERX/GeoLite.mmdb/releases/download/2026.01.31/GeoLite2-Country.mmdb';
-const DEFAULT_MAXMIND_DB_PATH = path.join(process.cwd(), 'data', 'GeoLite2-Country.mmdb');
-const IP_REGEX = /\b(?:\d{1,3}\.){3}\d{1,3}\b/g;
-const CONFIG_LINE_REGEX = /^(?:vless|vmess|trojan|ss):\/\//i;
-const FLAG_TAG_SUFFIX = 't.me/v2ray_dalghak';
-const DEFAULT_FLAG = '🏁';
+const DEFAULT_NORMAL_OUTPUT_PATH = path.join(process.cwd(), 'normal.txt');
+const DEFAULT_SUB_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
+const SHARE_LINK_REGEX = /^\s*(vmess|vless|trojan|ss|ssr):\/\/\S+/gim;
+const VMESS_BASE64_REGEX = /^[A-Za-z0-9+/=_-]+$/;
+const DEFAULT_USER_AGENT =
+  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36';
 
-const isValidIp = (value) => {
-  const parts = value.split('.').map((part) => Number(part));
-  return parts.length === 4 && parts.every((part) => Number.isInteger(part) && part >= 0 && part <= 255);
-};
+const isValidVmessLegacyLink = (link) => {
+  const payload = link.slice('vmess://'.length).split(/[?#]/, 1)[0].trim();
 
-const ipCache = new Map();
-let maxmindReader;
-let maxmindFailed = false;
-
-const countryCodeToFlag = (code) => {
-  if (!code || code.length !== 2) {
-    return null;
+  if (!payload) {
+    return false;
   }
 
-  const base = 0x1f1e6;
-  const chars = code.toUpperCase().split('');
-  return String.fromCodePoint(base + chars[0].charCodeAt(0) - 65, base + chars[1].charCodeAt(0) - 65);
-};
-
-const ensureDatabase = async (dbPath, dbUrl) => {
-  try {
-    await fs.access(dbPath);
-    return;
-  } catch (error) {
-    if (error?.code !== 'ENOENT') {
-      throw error;
-    }
-  }
-
-  await fs.mkdir(path.dirname(dbPath), { recursive: true });
-  const response = await fetch(dbUrl);
-
-  if (!response.ok) {
-    throw new Error(`Failed to download MaxMind database. Status: ${response.status}`);
-  }
-
-  const buffer = Buffer.from(await response.arrayBuffer());
-  await fs.writeFile(dbPath, buffer);
-};
-
-const getMaxMindReader = async (dbPath, dbUrl) => {
-  if (maxmindReader || maxmindFailed) {
-    return maxmindReader;
-  }
-
-  try {
-    await ensureDatabase(dbPath, dbUrl);
-    maxmindReader = await maxmind.open(dbPath);
-    return maxmindReader;
-  } catch (error) {
-    maxmindFailed = true;
-    console.warn('MaxMind database unavailable; continuing without flags.');
-    return null;
-  }
-};
-
-const fetchCountryCode = async (ip, reader) => {
-  if (ipCache.has(ip)) {
-    return ipCache.get(ip);
-  }
-
-  if (!reader) {
-    ipCache.set(ip, null);
-    return null;
-  }
-
-  const record = reader.get(ip);
-  const code = record?.country?.iso_code ?? record?.registered_country?.iso_code ?? null;
-  ipCache.set(ip, code);
-  return code;
-};
-
-const extractIps = (line) => {
-  const matches = line.match(IP_REGEX) ?? [];
-  return matches.filter(isValidIp);
-};
-
-const appendFlag = async (line, readerResolver) => {
-  if (!CONFIG_LINE_REGEX.test(line)) {
-    return line;
-  }
-
-  const [ip] = extractIps(line);
-
-  if (!ip) {
-    return line;
-  }
-
-  const reader = await readerResolver();
-  const code = await fetchCountryCode(ip, reader);
-  const flag = countryCodeToFlag(code);
-
-  if (!flag || line.includes(`#[${flag}]`)) {
-    return line;
-  }
-
-  return `${line}#[${flag}]${FLAG_TAG_SUFFIX}`;
+  return VMESS_BASE64_REGEX.test(payload);
 };
 
 const normalizeMessage = (html) => {
@@ -121,48 +28,133 @@ const normalizeMessage = (html) => {
   return $fragment('div').text().replace(/\r\n/g, '\n').trim();
 };
 
-const extractMessages = (html, messageCount) => {
+const extractMessageEntries = (html) => {
   const $ = load(html);
-  const messageNodes = $('.tgme_widget_message_text');
+  const wraps = $('.tgme_widget_message_wrap[data-post]').toArray();
 
-  if (!messageNodes.length) {
+  if (!wraps.length) {
     throw new Error('No message nodes found in Telegram HTML.');
   }
 
-  const messages = messageNodes
-    .toArray()
-    .map((node) => normalizeMessage($(node).html() ?? ''))
-    .filter(Boolean);
+  const entries = wraps
+    .map((node) => {
+      const dataPost = $(node).attr('data-post') ?? '';
+      const idText = dataPost.split('/').at(-1) ?? '';
+      const id = Number.parseInt(idText, 10);
+      const messageHtml = $(node).find('.tgme_widget_message_text').first().html() ?? '';
+      const text = normalizeMessage(messageHtml);
 
-  if (!messages.length) {
+      if (!Number.isInteger(id) || !text) {
+        return null;
+      }
+
+      return { id, text };
+    })
+    .filter((entry) => entry !== null);
+
+  if (!entries.length) {
     throw new Error('No non-empty messages extracted.');
   }
 
-  return messages.slice(-messageCount);
+  return entries;
 };
 
-const annotateMessages = async (messages, readerResolver) => {
-  const annotated = [];
+const isValidHostPortLink = (link) => {
+  const atIndex = link.indexOf('@');
 
-  for (const message of messages) {
-    const lines = message.split('\n');
-    const updatedLines = [];
-
-    for (const line of lines) {
-      updatedLines.push(await appendFlag(line, readerResolver));
-    }
-
-    annotated.push(updatedLines.join('\n'));
+  if (atIndex === -1) {
+    return false;
   }
 
-  return annotated;
+  const afterAt = link.slice(atIndex + 1);
+  const stopIndex = afterAt.search(/[?#]/);
+  const hostPort = stopIndex === -1 ? afterAt : afterAt.slice(0, stopIndex);
+  const colonIndex = hostPort.lastIndexOf(':');
+
+  if (colonIndex <= 0 || colonIndex >= hostPort.length - 1) {
+    return false;
+  }
+
+  return true;
+};
+
+const isValidShareLink = (link) => {
+  const protocol = link.slice(0, link.indexOf('://')).toLowerCase();
+
+  if (protocol === 'ss' || protocol === 'ssr') {
+    return true;
+  }
+
+  if (protocol === 'vmess') {
+    return isValidHostPortLink(link) || isValidVmessLegacyLink(link);
+  }
+
+  return isValidHostPortLink(link);
+};
+
+const extractShareLinks = (messages) => {
+  const text = messages.join('\n');
+  const matches = [...text.matchAll(SHARE_LINK_REGEX)].map((match) => match[0].trim());
+
+  if (!matches.length) {
+    return [];
+  }
+
+  const seen = new Set();
+  const deduped = [];
+
+  for (const link of matches) {
+    if (!isValidShareLink(link)) {
+      continue;
+    }
+
+    if (seen.has(link)) {
+      continue;
+    }
+
+    seen.add(link);
+    deduped.push(link);
+  }
+
+  return deduped;
+};
+
+const appendUniqueNames = (links) =>
+  links.map((link, index) => {
+    const hashIndex = link.indexOf('#');
+    const base = hashIndex === -1 ? link : link.slice(0, hashIndex);
+    const hash = hashIndex === -1 ? '' : link.slice(hashIndex + 1);
+
+    let baseName = 'node';
+
+    if (hash) {
+      try {
+        baseName = decodeURIComponent(hash);
+      } catch {
+        baseName = hash;
+      }
+    }
+
+    const suffix = String(index + 1).padStart(2, '0');
+    const name = `${baseName}-${suffix}`;
+    return `${base}#${encodeURIComponent(name)}`;
+  });
+
+const buildOutputs = (links) => {
+  const normalContent = `${links.join('\n')}\n`;
+  const subContent = Buffer.from(normalContent, 'utf8').toString('base64');
+  return { normalContent, subContent };
+};
+
+const sanityCheck = (normalContent, subContent) => {
+  const decoded = Buffer.from(subContent, 'base64').toString('utf8');
+  return decoded === normalContent;
 };
 
 const fetchHtml = async (channelUrl) => {
   const response = await fetch(channelUrl, {
     headers: {
-      'User-Agent':
-        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36',
+      'User-Agent': DEFAULT_USER_AGENT,
     },
   });
 
@@ -173,9 +165,56 @@ const fetchHtml = async (channelUrl) => {
   return response.text();
 };
 
-const writeOutput = async (messages, outputPath) => {
-  const content = `${messages.join(MESSAGE_SEPARATOR)}\n`;
-  await fs.writeFile(outputPath, content, 'utf8');
+const buildBeforeUrl = (channelUrl, beforeId) => {
+  const url = new URL(channelUrl);
+  url.searchParams.set('before', String(beforeId));
+  return url.toString();
+};
+
+const fetchMessages = async (channelUrl, messageCount) => {
+  const aggregated = [];
+  const seenIds = new Set();
+  let nextUrl = channelUrl;
+  let pagesFetched = 0;
+
+  while (aggregated.length < messageCount) {
+    const html = await fetchHtml(nextUrl);
+    const entries = extractMessageEntries(html);
+
+    if (!entries.length) {
+      break;
+    }
+
+    for (const entry of entries) {
+      if (seenIds.has(entry.id)) {
+        continue;
+      }
+
+      seenIds.add(entry.id);
+      aggregated.push(entry.text);
+
+      if (aggregated.length >= messageCount) {
+        break;
+      }
+    }
+
+    pagesFetched += 1;
+
+    const oldestId = Math.min(...entries.map((entry) => entry.id));
+
+    if (!oldestId || pagesFetched > 20) {
+      break;
+    }
+
+    nextUrl = buildBeforeUrl(channelUrl, oldestId);
+  }
+
+  return aggregated.slice(0, messageCount);
+};
+
+const writeOutputs = async (normalContent, subContent) => {
+  await fs.writeFile(DEFAULT_NORMAL_OUTPUT_PATH, normalContent, 'utf8');
+  await fs.writeFile(DEFAULT_SUB_OUTPUT_PATH, subContent, 'utf8');
 };
 
 const parseArgs = (args) => {
@@ -203,17 +242,6 @@ const parseArgs = (args) => {
       continue;
     }
 
-    if (arg.startsWith('--output=')) {
-      parsed.output = arg.slice('--output='.length);
-      continue;
-    }
-
-    if (arg === '--output') {
-      parsed.output = readValue('--output', args[index + 1]);
-      index += 1;
-      continue;
-    }
-
     if (arg.startsWith('--count=')) {
       parsed.count = arg.slice('--count='.length);
       continue;
@@ -232,15 +260,9 @@ const parseArgs = (args) => {
 const resolveOptions = () => {
   const cliArgs = parseArgs(process.argv.slice(2));
   const envChannel = process.env.CHANNEL_URL?.trim();
-  const envOutput = process.env.OUTPUT_PATH?.trim();
   const envCount = process.env.MESSAGE_COUNT?.trim();
-  const envDbPath = process.env.MAXMIND_DB_PATH?.trim();
-  const envDbUrl = process.env.MAXMIND_DB_URL?.trim();
 
   const channelUrl = cliArgs.channel ?? envChannel ?? DEFAULT_CHANNEL_URL;
-  const outputPath = cliArgs.output ?? envOutput ?? DEFAULT_OUTPUT_PATH;
-  const dbPath = envDbPath ?? DEFAULT_MAXMIND_DB_PATH;
-  const dbUrl = envDbUrl ?? DEFAULT_MAXMIND_DB_URL;
   const countRaw = cliArgs.count ?? envCount ?? DEFAULT_MESSAGE_COUNT;
   const messageCount =
     typeof countRaw === 'number' ? countRaw : Number.parseInt(String(countRaw), 10);
@@ -249,36 +271,38 @@ const resolveOptions = () => {
     throw new Error('Invalid CHANNEL_URL: provide a non-empty string.');
   }
 
-  if (!outputPath || typeof outputPath !== 'string') {
-    throw new Error('Invalid OUTPUT_PATH: provide a non-empty string.');
-  }
-
   if (!Number.isInteger(messageCount) || messageCount <= 0) {
     throw new Error('Invalid MESSAGE_COUNT: provide a positive integer.');
   }
 
   return {
     channelUrl,
-    outputPath: path.isAbsolute(outputPath)
-      ? outputPath
-      : path.join(process.cwd(), outputPath),
-    dbPath: path.isAbsolute(dbPath) ? dbPath : path.join(process.cwd(), dbPath),
-    dbUrl,
     messageCount,
   };
 };
 
 const main = async () => {
   try {
-    const { channelUrl, outputPath, messageCount, dbPath, dbUrl } = resolveOptions();
-    const readerResolver = () => getMaxMindReader(dbPath, dbUrl);
-    const html = await fetchHtml(channelUrl);
-    const messages = extractMessages(html, messageCount);
-    const annotatedMessages = await annotateMessages(messages, readerResolver);
-    await writeOutput(annotatedMessages, outputPath);
-    console.log(`Wrote ${messages.length} messages to ${outputPath}.`);
+    const { channelUrl, messageCount } = resolveOptions();
+    const messages = await fetchMessages(channelUrl, messageCount);
+    const links = appendUniqueNames(extractShareLinks(messages));
+
+    if (!links.length) {
+      console.error('No valid share links found in extracted messages.');
+      process.exit(1);
+    }
+
+    const { normalContent, subContent } = buildOutputs(links);
+
+    if (!sanityCheck(normalContent, subContent)) {
+      console.error('Sanity check failed: Base64 content does not decode to normal.txt payload.');
+      process.exit(1);
+    }
+
+    await writeOutputs(normalContent, subContent);
+    console.log(`Wrote ${links.length} links to normal.txt and sub.txt.`);
   } catch (error) {
-    console.error('Failed to generate sub.txt.');
+    console.error('Failed to generate subscription outputs.');
     console.error(error instanceof Error ? error.message : error);
     process.exit(1);
   }
