@@ -9,6 +9,7 @@ const DEFAULT_USER_AGENT =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 const DEFAULT_NORMAL_OUTPUT_PATH = path.join(process.cwd(), 'normal.txt');
 const DEFAULT_SUB_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
+const MAX_PAGE_FETCHES = 20;
 const SHARE_LINK_REGEX = /^\s*(vmess|vless|trojan|ss|ssr):\/\/\S+/gim;
 const VMESS_BASE64_REGEX = /^[A-Za-z0-9+/=_-]+$/;
 
@@ -28,24 +29,48 @@ const normalizeMessage = (html) => {
   return $fragment('div').text().replace(/\r\n/g, '\n').trim();
 };
 
-const extractMessages = (html, messageCount) => {
+const parseMessageId = (post) => {
+  if (!post) {
+    return null;
+  }
+
+  const [messageId] = post.split('/').slice(-1);
+  const numericId = Number.parseInt(messageId, 10);
+  return Number.isInteger(numericId) ? numericId : null;
+};
+
+const extractMessagesFromPage = (html) => {
   const $ = load(html);
-  const messageNodes = $('.tgme_widget_message_text');
+  const messageNodes = $('.tgme_widget_message_wrap');
 
   if (!messageNodes.length) {
-    throw new Error('No message nodes found in Telegram HTML.');
+    return { messages: [], oldestMessageId: null };
   }
 
-  const messages = messageNodes
-    .toArray()
-    .map((node) => normalizeMessage($(node).html() ?? ''))
-    .filter(Boolean);
+  const messages = [];
+  let oldestMessageId = null;
 
-  if (!messages.length) {
-    throw new Error('No non-empty messages extracted.');
+  for (const node of messageNodes.toArray()) {
+    const messageNode = $(node).find('.tgme_widget_message').first();
+    const textNode = $(node).find('.tgme_widget_message_text').first();
+
+    if (textNode.length) {
+      const normalized = normalizeMessage(textNode.html() ?? '');
+
+      if (normalized) {
+        messages.push(normalized);
+      }
+    }
+
+    const post = messageNode.attr('data-post') ?? $(node).attr('data-post');
+    const messageId = parseMessageId(post);
+
+    if (messageId !== null && (oldestMessageId === null || messageId < oldestMessageId)) {
+      oldestMessageId = messageId;
+    }
   }
 
-  return messages.slice(-messageCount);
+  return { messages, oldestMessageId };
 };
 
 const isValidHostPortLink = (link) => {
@@ -223,11 +248,54 @@ const resolveOptions = () => {
   };
 };
 
+const fetchMessages = async (channelUrl, messageCount) => {
+  const collected = [];
+  const seenMessages = new Set();
+  let beforeId = null;
+
+  for (let page = 0; page < MAX_PAGE_FETCHES && collected.length < messageCount; page += 1) {
+    const pageUrl = beforeId === null ? channelUrl : `${channelUrl}?before=${beforeId}`;
+    const html = await fetchHtml(pageUrl);
+    const { messages, oldestMessageId } = extractMessagesFromPage(html);
+
+    if (!messages.length) {
+      break;
+    }
+
+    let newItemsCount = 0;
+
+    for (const message of messages) {
+      if (seenMessages.has(message)) {
+        continue;
+      }
+
+      seenMessages.add(message);
+      collected.push(message);
+      newItemsCount += 1;
+
+      if (collected.length >= messageCount) {
+        break;
+      }
+    }
+
+    if (oldestMessageId === null || beforeId === oldestMessageId || newItemsCount === 0) {
+      break;
+    }
+
+    beforeId = oldestMessageId;
+  }
+
+  if (!collected.length) {
+    throw new Error('No non-empty messages extracted.');
+  }
+
+  return collected.slice(0, messageCount);
+};
+
 const main = async () => {
   try {
     const { channelUrl, messageCount } = resolveOptions();
-    const html = await fetchHtml(channelUrl);
-    const messages = extractMessages(html, messageCount);
+    const messages = await fetchMessages(channelUrl, messageCount);
     const links = appendUniqueNames(extractShareLinks(messages));
 
     if (!links.length) {
