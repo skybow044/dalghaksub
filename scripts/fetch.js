@@ -51,6 +51,7 @@ const extractMessagesFromPage = (html) => {
   let oldestMessageId = null;
 
   for (const node of messageNodes.toArray()) {
+    const messageNode = $(node).find('.tgme_widget_message').first();
     const textNode = $(node).find('.tgme_widget_message_text').first();
 
     if (textNode.length) {
@@ -61,7 +62,7 @@ const extractMessagesFromPage = (html) => {
       }
     }
 
-    const post = $(node).attr('data-post');
+    const post = messageNode.attr('data-post') ?? $(node).attr('data-post');
     const messageId = parseMessageId(post);
 
     if (messageId !== null && (oldestMessageId === null || messageId < oldestMessageId)) {
