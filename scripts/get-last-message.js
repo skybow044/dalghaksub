@@ -35,24 +35,32 @@ const fetchLastMessage = async (channel) => {
 
   const html = await response.text();
   const $ = load(html);
-  const wrap = $('.tgme_widget_message_wrap').first();
+  const wraps = $('.tgme_widget_message_wrap').toArray();
 
-  if (!wrap.length) {
+  if (!wraps.length) {
     throw new Error('No messages found in channel page.');
   }
 
-  const messageText = wrap.find('.tgme_widget_message_text').first().text().trim();
-  const messageLink = wrap.find('.tgme_widget_message_date').attr('href') ?? null;
+  for (const wrapNode of wraps) {
+    const wrap = $(wrapNode);
+    const messageText = wrap.find('.tgme_widget_message_text').first().text().trim();
 
-  if (!messageText) {
-    throw new Error('Latest message has no text content.');
+    if (!messageText) {
+      continue;
+    }
+
+    const messageLink = wrap.find('.tgme_widget_message_date').attr('href') ?? null;
+
+    return {
+      channel,
+      messageText,
+      messageLink,
+    };
   }
 
-  return {
-    channel,
-    messageText,
-    messageLink,
-  };
+  {
+    throw new Error('Latest message has no text content.');
+  }
 };
 
 const fallbackFromLocal = async () => {
