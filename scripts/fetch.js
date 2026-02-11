@@ -33,7 +33,7 @@ const extractMessageEntries = (html) => {
   const wraps = $('.tgme_widget_message_wrap[data-post]').toArray();
 
   if (!wraps.length) {
-    throw new Error('No message nodes found in Telegram HTML.');
+    return [];
   }
 
   const entries = wraps
@@ -51,10 +51,6 @@ const extractMessageEntries = (html) => {
       return { id, text };
     })
     .filter((entry) => entry !== null);
-
-  if (!entries.length) {
-    throw new Error('No non-empty messages extracted.');
-  }
 
   return entries;
 };
@@ -182,6 +178,10 @@ const fetchMessages = async (channelUrl, messageCount) => {
     const entries = extractMessageEntries(html);
 
     if (!entries.length) {
+      if (!pagesFetched && !aggregated.length) {
+        throw new Error('No message nodes found in Telegram HTML.');
+      }
+
       break;
     }
 
