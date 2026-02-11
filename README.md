@@ -1,20 +1,20 @@
-# Telegram Channel to GitHub Pages (sub.txt)
+# Telegram Channel to GitHub Pages (normal.txt + sub.txt)
 
-این ریپو خروجی ۱۰۰ پیام آخر کانال تلگرام را از نسخه‌ی عمومی (`t.me/s/...`) استخراج می‌کند و به صورت `text/plain` در GitHub Pages منتشر می‌کند. به‌روزرسانی خودکار هر ۱۵ دقیقه انجام می‌شود.
+این ریپو خروجی ۱۰۰ پیام آخر کانال تلگرام را از نسخه‌ی عمومی (`t.me/s/...`) استخراج می‌کند، لینک‌های کانفیگ را جدا می‌کند و دو فایل می‌سازد: `normal.txt` (لینک‌ها) و `sub.txt` (Base64 استاندارد V2Ray subscription). به‌روزرسانی خودکار هر ۱۵ دقیقه انجام می‌شود.
 
 ## ساختار فایل‌ها
-- `scripts/fetch.js` : اسکریپت اسکرپ و تولید `sub.txt`
-- `sub.txt` : خروجی نهایی برای GitHub Pages
+- `scripts/fetch.js` : اسکریپت اسکرپ و تولید `normal.txt` و `sub.txt`
+- `normal.txt` : خروجی خوانا (هر لینک یک خط)
+- `sub.txt` : خروجی Base64 از محتوای `normal.txt`
 - `.github/workflows/update.yml` : اجرای زمان‌بندی شده + دستی
 
 ## پیش‌نیازها
 - Node.js 20+
 - دسترسی به اینترنت برای دریافت HTML کانال
-- دسترسی به اینترنت برای دانلود دیتابیس MaxMind (GeoLite2-Country) در اولین اجرا
 
 ## راه‌اندازی قدم‌به‌قدم
 1. ریپو را بسازید و این فایل‌ها را اضافه کنید.
-2. در ریشه ریپو دستور زیر را اجرا کنید تا `sub.txt` تولید شود:
+2. در ریشه ریپو دستور زیر را اجرا کنید تا `normal.txt` و `sub.txt` تولید شود:
    ```bash
    npm install
    node scripts/fetch.js
@@ -50,8 +50,5 @@ curl -L https://<username>.github.io/<repo>/sub.txt
 از تب Actions، workflow با نام **Update Telegram feed** را انتخاب کرده و **Run workflow** را بزنید.
 
 ## نکات
-- اگر محتوای `sub.txt` تغییری نکند، workflow کامیت جدید ایجاد نمی‌کند.
-- در صورت شکست دریافت HTML یا استخراج پیام‌ها، workflow با خطا متوقف می‌شود.
-- اسکریپت به‌صورت پیش‌فرض دیتابیس MaxMind را از ریلیز
-  `GeoLite2-Country.mmdb` دانلود می‌کند. برای سفارشی‌سازی می‌توانید از
-  `MAXMIND_DB_PATH` و `MAXMIND_DB_URL` استفاده کنید.
+- اگر محتوای `normal.txt` و `sub.txt` تغییری نکند، workflow کامیت جدید ایجاد نمی‌کند.
+- در صورت شکست دریافت HTML یا نبود لینک معتبر، workflow با خطا متوقف می‌شود.
