@@ -9,8 +9,6 @@ const DEFAULT_NORMAL_OUTPUT_PATH = path.join(process.cwd(), 'normal.txt');
 const DEFAULT_SUB_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
 const SHARE_LINK_REGEX = /^\s*(vmess|vless|trojan|ss|ssr):\/\/\S+/gim;
 const VMESS_BASE64_REGEX = /^[A-Za-z0-9+/=_-]+$/;
-const DEFAULT_USER_AGENT =
-  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36';
 
 const isValidVmessLegacyLink = (link) => {
   const payload = link.slice('vmess://'.length).split(/[?#]/, 1)[0].trim();
@@ -28,31 +26,24 @@ const normalizeMessage = (html) => {
   return $fragment('div').text().replace(/\r\n/g, '\n').trim();
 };
 
-const extractMessageEntries = (html) => {
+const extractMessages = (html, messageCount) => {
   const $ = load(html);
-  const wraps = $('.tgme_widget_message_wrap[data-post]').toArray();
+  const messageNodes = $('.tgme_widget_message_text');
 
-  if (!wraps.length) {
-    return [];
+  if (!messageNodes.length) {
+    throw new Error('No message nodes found in Telegram HTML.');
   }
 
-  const entries = wraps
-    .map((node) => {
-      const dataPost = $(node).attr('data-post') ?? '';
-      const idText = dataPost.split('/').at(-1) ?? '';
-      const id = Number.parseInt(idText, 10);
-      const messageHtml = $(node).find('.tgme_widget_message_text').first().html() ?? '';
-      const text = normalizeMessage(messageHtml);
+  const messages = messageNodes
+    .toArray()
+    .map((node) => normalizeMessage($(node).html() ?? ''))
+    .filter(Boolean);
 
-      if (!Number.isInteger(id) || !text) {
-        return null;
-      }
+  if (!messages.length) {
+    throw new Error('No non-empty messages extracted.');
+  }
 
-      return { id, text };
-    })
-    .filter((entry) => entry !== null);
-
-  return entries;
+  return messages.slice(-messageCount);
 };
 
 const isValidHostPortLink = (link) => {
@@ -161,57 +152,6 @@ const fetchHtml = async (channelUrl) => {
   return response.text();
 };
 
-const buildBeforeUrl = (channelUrl, beforeId) => {
-  const url = new URL(channelUrl);
-  url.searchParams.set('before', String(beforeId));
-  return url.toString();
-};
-
-const fetchMessages = async (channelUrl, messageCount) => {
-  const aggregated = [];
-  const seenIds = new Set();
-  let nextUrl = channelUrl;
-  let pagesFetched = 0;
-
-  while (aggregated.length < messageCount) {
-    const html = await fetchHtml(nextUrl);
-    const entries = extractMessageEntries(html);
-
-    if (!entries.length) {
-      if (!pagesFetched && !aggregated.length) {
-        throw new Error('No message nodes found in Telegram HTML.');
-      }
-
-      break;
-    }
-
-    for (const entry of entries) {
-      if (seenIds.has(entry.id)) {
-        continue;
-      }
-
-      seenIds.add(entry.id);
-      aggregated.push(entry.text);
-
-      if (aggregated.length >= messageCount) {
-        break;
-      }
-    }
-
-    pagesFetched += 1;
-
-    const oldestId = Math.min(...entries.map((entry) => entry.id));
-
-    if (!oldestId || pagesFetched > 20) {
-      break;
-    }
-
-    nextUrl = buildBeforeUrl(channelUrl, oldestId);
-  }
-
-  return aggregated.slice(0, messageCount);
-};
-
 const writeOutputs = async (normalContent, subContent) => {
   await fs.writeFile(DEFAULT_NORMAL_OUTPUT_PATH, normalContent, 'utf8');
   await fs.writeFile(DEFAULT_SUB_OUTPUT_PATH, subContent, 'utf8');
@@ -284,7 +224,8 @@ const resolveOptions = () => {
 const main = async () => {
   try {
     const { channelUrl, messageCount } = resolveOptions();
-    const messages = await fetchMessages(channelUrl, messageCount);
+    const html = await fetchHtml(channelUrl);
+    const messages = extractMessages(html, messageCount);
     const links = appendUniqueNames(extractShareLinks(messages));
 
     if (!links.length) {
