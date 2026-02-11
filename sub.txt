@@ -1,330 +1,209 @@
-vless://3591d9e2-edbf-43f1-98dc-00eb607b8c46@85.133.197.238:9829?security=none&encryption=none&host=pro30afzar.com&headerType=http&type=tcp#v2ray_dalghak
+trojan://telegram-id-directvpn@3.122.189.42:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak
 
-vless://83c786f4-545e-4d79-b3e8-ebea76b36e38@vip-80.f-sub.cfd:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#v2ray_dalghak
+trojan://telegram-id-privatevpns@3.122.189.42:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak
 
-trojan://humanity@104.18.32.47:443?encryption=none&security=tls&sni=www.multiplydose.com&fp=chrome&insecure=1&type=ws&path=%2Fassignment#v2ray_dalghak
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@3.122.189.42:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#v2ray_dalghak
 
-vless://f2e486f9-1697-4be6-be59-6c4fb42c7a24@188.114.97.3:443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=pas-kale-agha.pages.dev&fp=randomized&type=ws&sni=paS-kaLE-AGhA.pageS.deV#v2ray_dalghak
+vless://31701b5d-ca95-92f9-d684-dae3706161ea@dd.openaccessnode.com:504?mode=gun&security=reality&encryption=none&pbk=aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs&fp=chrome&type=grpc&serviceName=JNIR&sni=nobitex.ir&sid=1d64e9805b4f9ae3#v2ray_dalghak
 
-vless://0496d8a6-90ad-4f36-b9c7-d9caec7e6ff6@188.121.118.36:443?security=&encryption=none&host=telewebion.com&headerType=http&type=tcp#v2ray_dalghak
+vmess://eyJ2IjogbnVsbCwgInBzIjogInYycmF5X2RhbGdoYWsiLCAiYWRkIjogImpqamsuMTkxMjY4Lnh5eiIsICJwb3J0IjogNDQzLCAiaWQiOiAiNWNjY2I0ZGEtOGFlZS00YjAxLWJlODQtMjA1NjI2NWU1MmRjIiwgImFpZCI6ICIwIiwgInNjeSI6IG51bGwsICJuZXQiOiAid3MiLCAidHlwZSI6IG51bGwsICJob3N0IjogImpqamsuMTkxMjY4Lnh5eiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiL0F3VUp5R2g5WW02dlZ6ZzM1QTZ1ZXl5Wm5XZCIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICIiLCAiZnAiOiBudWxsfQ==
 
-vless://f84ca8d7-ef38-4c82-b3a1-fd800bcf4ac5@pol2.creativelife.monster:37962?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+vless://53cd8178-2ee6-43d9-a2a7-881f287fd408@172.234.130.82:10001?encryption=none&security=reality&sni=yahoo.com&fp=firefox&pbk=kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM&sid=1a24af87&type=raw&headertype=none#v2ray_dalghak
 
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@159.223.24.65:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
+vless://96ca0ac0-163a-4066-9128-8770e1a810da@62.60.159.133:55992?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
 
-vless://f84ca8d7-ef38-4c82-b3a1-fd800bcf4ac5@pol2.creativelife.monster:37962?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.68.134.85:8118#v2ray_dalghak
 
-vless://88181007-9bb3-4e6c-826d-4400b191b8d7@135.125.174.103:37928?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+vless://00f8444e-722a-4de1-b604-3480a40e8ea8@185.146.173.58:8080?path=%2Fservernet&security=none&encryption=none&host=dcc9.servernet.fun.&type=ws#v2ray_dalghak
+
+vmess://eyJhZGQiOiAiMTA0LjE5LjQ3LjIyMyIsICJhaWQiOiAwLCAiaG9zdCI6ICJoazAxLmxpbmtpdG5vdy5uZXQiLCAiaWQiOiAiMzkxMzVhMzktZTZjYS00M2RmLWEzNjAtZDg1OWVlYTU4ZDg2IiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAicG9ydCI6IDg0NDMsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJwcyI6ICJ2MnJheV9kYWxnaGFrIn0=
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.17.157.120:443?path=/&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#v2ray_dalghak
+
+ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@38.68.134.48:3389#v2ray_dalghak
+
+vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAidmF1MS4wYmFkLmNvbSIsICJwb3J0IjogIjQ0MyIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiOTI3MDk0ZDMtZDY3OC00NzYzLTg1OTEtZTI0MGQwYmNhZTg3IiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9jaGF0IiwgImhvc3QiOiAidmF1MS4wYmFkLmNvbSIsICJ0bHMiOiAidGxzIn0=
+
+vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&type=tcp&headerType=none#v2ray_dalghak
+
+vless://b633661c-bdba-4929-a0df-01e3ebd476f0@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
+
+vless://jina@20.79.160.49:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=jina-207916049-direct.yektanet.co&alpn=http%2F1.1&fp=chrome&type=tcp&headerType=none#v2ray_dalghak
+
+vless://1332320d-7153-4bb1-9e87-6a57c661a576@u.takspeed.shop:2086?encryption=none&security=none&type=ws&path=%2F#v2ray_dalghak
+
+vless://bf2ca57a-06a0-11f1-9f7e-8f38e0f00e53@nl2.vpn.kim:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=nl2.wizard.select&fp=chrome&pbk=ELtVsaW5Vg-8XX7WPlSgZ1EZDIbFB1wVLPFNQSjlf2Y&sid=42217815&spx=%2F&type=tcp&headerType=none#v2ray_dalghak
+
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.181:23576?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&type=tcp&headerType=none#v2ray_dalghak
+
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8319#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.112.130.53:8316#v2ray_dalghak
+
+vless://195ec880-d140-4265-aec7-47d0429407ed@do.jadhap.ir:45595?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@b2n.ir:443?path=%2F%3Fed%3D443&security=tls&encryption=none&insecure=0&host=b2ncdn213142156116.reservedns.com&fp=randomized&type=ws&allowInsecure=0&sni=b2ncdn213142156116.reservedns.com#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@cdnirs207.b2n.ir.nic.stp.debian.org.ubuntu.ir.reservedns.website:1095?security=none&encryption=none&host=soft98.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@cdnirs207.b2n.ir.nic.stp.debian.org.ubuntu.ir.reservedns.website:1087?security=none&encryption=none&host=soft98.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@ash-peak.vm.twilightparadox.com:2010?security=&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://d5c895c8-e64c-5bc3-b56a-be9f760f8250@5.35.36.39:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=eh.vk.com&fp=chrome&pbk=0Dp29aPPjPglX26NOlqnfbKLCZ6id2OQCiO-SVo76BI&sid=9ce128ed0237&type=tcp&headerType=none#v2ray_dalghak
+
+vless://b3ab86ed-b74f-4ad3-badc-e987fa3ad2c3@185.215.228.252:31837?security=none&encryption=none&host=myket.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://a44e0875-210f-4941-9062-89b6361a14c6@94.131.123.167:443?security=reality&encryption=none&pbk=i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=apple.com&sid=8bcfe256cf216fd8#v2ray_dalghak
+
+vless://9f9ca232-fce3-4fdd-a210-0e9dfb9fa85b@cdncdn.3utilities.com:39688?s#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@104.17.147.22:#v2ray_dalghak
 
 vless://19a1e5b1-6289-4fe6-9aad-be285510942d@av.nexconnx.com:8080?security=none&encryption=none&host=check-host.net&headerType=http&type=tcp#v2ray_dalghak
 
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
+vless://85a33a63-4cd8-41fe-8e36-7495946f1e61@95.38.242.222:8443?security=none&encryption=none&host=tgju.org&headerType=http&type=tcp#v2ray_dalghak
 
------
+vless://73748f25-4b2f-4036-a94e-51d9f77ab82a@sub.mobileamin.shop:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
 
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode=gun&security=none&encryption=none&type=grpc#v2ray_dalghak
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=cf-xray-proxy.t-me-forensic.workers.dev#v2ray_dalghak
 
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.116:8880?mode=gun&security=none&encryption=none&type=grpc#v2ray_dalghak
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.182:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
 
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=none&encryption=none&fp=chrome&type=grpc#v2ray_dalghak
-
-vless://1f6afb1e-36cf-4924-8144-d070f337e553@5.75.192.248:29373?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://e765eb5b-8442-40e3-9532-857ba5ececa7@104.18.4.130:443?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&type=grpc&allowInsecure=0&sni=vbox.ping-box.com#v2ray_dalghak
-
-vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@108.162.198.154:443?path=%2Ffp%3Dchrome%3Fed%3D2048&security=tls&encryption=none&insecure=0&host=diprox.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=DiprOX.pages.DEV#v2ray_dalghak
-
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@165.232.79.158:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
-
-vless://0ac82530-7efa-4df0-9c95-1643aff9256f@91.107.179.39:22595?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
-
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@192.46.237.158:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@37.27.24.143:443?security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
-
-vless://10ed0abe-4556-48e4-8d9e-1681fd5762ac@5.75.192.248:39612?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@95.182.115.127:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
-
-vless://0e6cd6ca-fba2-4b86-923c-f0a021f7ad15@142.132.140.143:1003?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@108.162.198.154:443?path=%2Ffp%3Dchrome&security=tls&encryption=none&insecure=0&host=DiprOX.pages.DEV&fp=chrome&type=ws&allowInsecure=0&sni=DiprOX.pages.DEV#v2ray_dalghak
-
-vless://0ad623ab-7fc8-4422-bd79-b65dd1cb78a2@5.75.192.248:14469?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://d4c244cd-fb79-478a-be50-7ea889491270@140.248.128.0:80?mode=auto&path=%2Fxhttp&security=none&encryption=none&host=hazaranetwork.bh&type=xhttp#v2ray_dalghak
-
-vless://8b1d7c16-296b-4fbd-bb79-4107eadd12b2@172.239.239.189:39959?type=tcp&encryption=none&path=%2F&host=divar.ir&headerType=http&security=none#v2ray_dalghak
-
-vless://11875419-c06b-465e-ba3f-ebff2545c0f5@but.honey.i.luv.i5.javidshah.sbs:2098?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
-
-vless://11875419-c06b-465e-ba3f-ebff2545c0f5@but.honey.i.luv.i5.javidshah.sbs:2098?encryption=none&security=none#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vless://505997ba-cbdb-466e-a3ad-69c6a4553b38@151.101.25.242:80?encryption=none&host=pizzabama.global.ssl.fastly.net&path=%2Fcontainers%2Ffi&security=none&type=ws#v2ray_dalghak
-
-vless://bc0602d4-86e3-4d58-80d8-afc6c67926a2@87.242.102.193:8443?encryption=none&flow=xtls-rprx-vision&fp=qq&headerType=none&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&security=reality&sid=a20d3ed244c76426&sni=yandex.ru&type=tcp#v2ray_dalghak
-
-vless://2130291f-50e9-43d4-d415-c85b34134d4f@193.242.125.18:80?encryption=none&headerType=none&security=none&type=tcp#v2ray_dalghak
-
-vless://eb4234b2-8083-4038-af1d-ae752b4ad6d4@37.139.33.57:8443?security=reality&encryption=none&pbk=_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=m.vk.ru&sid=6419bed7fd0a2cff#v2ray_dalghak
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.d#v2ray_dalghak
 
 vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#v2ray_dalghak
 
-vmess://eyJhZGQiOiAiZGQub3BlbmFjY2Vzc25vZGUuY29tIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogInJlZmVyc2lvbi5jb20iLCAiaWQiOiAiMzE3MDFiNWQtY2E5NS05MmY5LWQ2ODQtZGFlMzcwNjE2MWVhIiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi9ASmF2aWRuYW1hbklyYW4vSmF2aWQtU0hBSC1LaW5nUmV6YVBhaGxhdmkvIiwgInBvcnQiOiAiNTAyIiwgInBzIjogInYycmF5X2RhbGdoYWsiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiaHR0cCIsICJ2IjogIjIifQ==
+vless://bc0602d4-86e3-4d58-80d8-afc6c67926a2@87.242.102.193:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yandex.ru&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=qq&security=reality&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#v2ray_dalghak
 
-vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@104.20.1.252:80?path=%2F%3Fed&security=&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#v2ray_dalghak
+vless://25577310-a767-4b2c-90c6-9fcf4bb387f0@v3.dabache.top:443?path=/?ed=2560&security=tls&encryption=none&insecure=1&host=fffb57cc.tacgne.pages.dev&fp=chrome&type=ws&allowInsecure=1&sni=fffb57cc.tacgne.pages.dev#v2ray_dalghak
 
-vless://3321a819-889d-40b3-b8fa-f34208827ef1@57.129.137.56:443?path=%2FJoin-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0&security=tls&encryption=none&insecure=0&host=o00o.snip.qzz.io&type=ws&allowInsecure=0&sni=o00o.snip.qzz.io#v2ray_dalghak
-
-vless://67fc444c-b363-455f-8ff0-c2822e731cef@62.50.146.12:6079?security=reality&encryption=none&pbk=8r2fOsMWM6oDrXxMFTgTg6RXFJc18fsQeZM9F349U1U&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=pcmag.com&sid=fb1375d6f59321bd#v2ray_dalghak
-
-vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=&encryption=none&fp=chrome&type=grpc#v2ray_dalghak
+vless://4bb175e9-436c-4449-a5db-3ccbfcb28022@3.125.3.128:29044?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
 
  ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
     @v2ray_Dalghak
 
 -----
 
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2NWU3MTZlM2QzZWMxZmMw@84.247.147.61:24914#v2ray_dalghak
+vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@104.17.147.22:#v2ray_dalghak
 
-vless://b52370db-a4af-43e3-9e4c-a7e7115fcecb@172.64.155.209:443?encryption=none&security=tls&sni=fic.ketabv.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=fic.ketabv.ir&path=%2Fs55dLF15ddokB1leJ%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night#v2ray_dalghak
+vless://19a1e5b1-6289-4fe6-9aad-be285510942d@av.nexconnx.com:8080?security=none&encryption=none&host=check-host.net&headerType=http&type=tcp#v2ray_dalghak
 
-vless://b52370db-a4af-43e3-9e4c-a7e7115fcecb@188.114.96.6:443?encryption=none&security=tls&sni=fic.ketabv.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=fic.ketabv.ir&path=%2Fs55dLF15ddokB1leJ%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night#v2ray_dalghak
+vless://85a33a63-4cd8-41fe-8e36-7495946f1e61@95.38.242.222:8443?security=none&encryption=none&host=tgju.org&headerType=http&type=tcp#v2ray_dalghak
+
+vless://73748f25-4b2f-4036-a94e-51d9f77ab82a@sub.mobileamin.shop:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=cf-xray-proxy.t-me-forensic.workers.dev#v2ray_dalghak
+
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.182:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
+
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.d#v2ray_dalghak
+
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#v2ray_dalghak
+
+vless://bc0602d4-86e3-4d58-80d8-afc6c67926a2@87.242.102.193:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yandex.ru&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=qq&security=reality&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#v2ray_dalghak
+
+vless://25577310-a767-4b2c-90c6-9fcf4bb387f0@v3.dabache.top:443?path=/?ed=2560&security=tls&encryption=none&insecure=1&host=fffb57cc.tacgne.pages.dev&fp=chrome&type=ws&allowInsecure=1&sni=fffb57cc.tacgne.pages.dev#v2ray_dalghak
+
+vless://4bb175e9-436c-4449-a5db-3ccbfcb28022@3.125.3.128:29044?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://e3682df7-e8ec-4705-b5ef-3bbaa7007c94@va04.serverh1ub.ir:8080?security=reality&encryption=none&pbk=D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=chatgpt.com&sid=b7b70c104ad267b8#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@104.17.147.22:#v2ray_dalghak
+
+vless://19a1e5b1-6289-4fe6-9aad-be285510942d@av.nexconnx.com:8080?security=none&encryption=none&host=check-host.net&headerType=http&type=tcp#v2ray_dalghak
+
+vless://85a33a63-4cd8-41fe-8e36-7495946f1e61@95.38.242.222:8443?security=none&encryption=none&host=tgju.org&headerType=http&type=tcp#v2ray_dalghak
+
+vless://73748f25-4b2f-4036-a94e-51d9f77ab82a@sub.mobileamin.shop:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=cf-xray-proxy.t-me-forensic.workers.dev#v2ray_dalghak
+
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.182:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
+
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.d#v2ray_dalghak
+
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#v2ray_dalghak
+
+vless://bc0602d4-86e3-4d58-80d8-afc6c67926a2@87.242.102.193:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yandex.ru&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=qq&security=reality&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#v2ray_dalghak
+
+vless://25577310-a767-4b2c-90c6-9fcf4bb387f0@v3.dabache.top:443?path=/?ed=2560&security=tls&encryption=none&insecure=1&host=fffb57cc.tacgne.pages.dev&fp=chrome&type=ws&allowInsecure=1&sni=fffb57cc.tacgne.pages.dev#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@104.17.147.22:#v2ray_dalghak
+
+vless://19a1e5b1-6289-4fe6-9aad-be285510942d@av.nexconnx.com:8080?security=none&encryption=none&host=check-host.net&headerType=http&type=tcp#v2ray_dalghak
+
+vless://85a33a63-4cd8-41fe-8e36-7495946f1e61@95.38.242.222:8443?security=none&encryption=none&host=tgju.org&headerType=http&type=tcp#v2ray_dalghak
+
+vless://73748f25-4b2f-4036-a94e-51d9f77ab82a@sub.mobileamin.shop:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=cf-xray-proxy.t-me-forensic.workers.dev#v2ray_dalghak
+
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.182:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
+
+vless://0c17306d-9a51-481b-91c9-79235cd21026@workers.dev:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=cf-xray-proxy.t-me-forensic.workers.d#v2ray_dalghak
+
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#v2ray_dalghak
+
+vless://bc0602d4-86e3-4d58-80d8-afc6c67926a2@87.242.102.193:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yandex.ru&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=qq&security=reality&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#v2ray_dalghak
+
+vless://25577310-a767-4b2c-90c6-9fcf4bb387f0@v3.dabache.top:443?path=/?ed=2560&security=tls&encryption=none&insecure=1&host=fffb57cc.tacgne.pages.dev&fp=chrome&type=ws&allowInsecure=1&sni=fffb57cc.tacgne.pages.dev#v2ray_dalghak
+
+vless://4bb175e9-436c-4449-a5db-3ccbfcb28022@3.125.3.128:29044?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://e3682df7-e8ec-4705-b5ef-3bbaa7007c94@va04.serverh1ub.ir:8080?security=reality&encryption=none&pbk=D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=chatgpt.com&sid=b7b70c104ad267b8#v2ray_dalghak
+
+vless://e3cb508f-4cd7-4f1b-8fd1-6d71cdb11429@perl.org:80?encryption=none&flow=&type=ws&path=/site#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@3.122.189.42:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#v2ray_dalghak
+
+vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&type=tcp&headerType=none#v2ray_dalghak
+
+vless://ff6fb512-147d-419a-9672-e131133f7189@lt-cherry-01.com:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=chrome&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&sid=e0ef3d5c0aacb615&type=tcp&headerType=none#v2ray_dalghak
+
+vless://1332320d-7153-4bb1-9e87-6a57c661a576@u.takspeed.shop:2086?path=%2F&security=none&encryption=none&type=ws#v2ray_dalghak
+
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#v2ray_dalghak
+
+vless://352f047c-3176-4271-9bc6-3f7d33ee03c7@riali22.carpet-carpet-carped.ir:2018?security=reality&encryption=none&pbk=pY4Vwx68IazGJq4BPHFVAXzmQhOz9DmKjpNM2CSxehc&headerType=none&fp=firefox&type=tcp&sni=ub.com&sid=83f404#v2ray_dalghak
+
+trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=1&fp=chrome&type=ws&allowInsecure=1&sni=www.creationlong.org#v2ray_dalghak
 
 vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@104.20.1.252:80?encryption=none&security=none&type=ws&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed#v2ray_dalghak
 
-vless://b52370db-a4af-43e3-9e4c-a7e7115fcecb@172.67.213.180:443?encryption=none&security=tls&sni=fic.ketabv.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=fic.ketabv.ir&path=%2Fs55dLF15ddokB1leJ%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night#v2ray_dalghak
+vless://e765eb5b-8442-40e3-9532-857ba5ececa7@ipbaz.ping-box.com:443/?type=grpc&encryption=none&security=tls&sni=vbox.ping-box.com&alpn=h2%2Chttp%2F1.1networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=chrome#v2ray_dalghak
 
-vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@104.18.125.5:80?encryption=none&security=none&type=ws&host=lively-brook-c471.nedena3319.workers.dev&path=%2F%3Fed%3D2048#v2ray_dalghak
-
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.181:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
-
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.181:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
-
-vless://546e91b5-c33eی-4b04-b20c-c0fc8f6d9d7f@104.20.1.252:80?path=%2F%3Fed&security=none&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#v2ray_dalghak
-
-vless://b4bb842c-bb1e-4110-b242-f1ab305d7cc7@Iran.AhmadMomeni.ir:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vless://96d9bcb0-9ad2-48be-85a2-a9ab3a005261@104.18.32.47:2083?encryption=none&security=tls&sni=ds1-mx-fn154-protection.iranlease.com&alpn=http%2F1.1&allowInsecure=1&type=ws&host=ds1-mx-fn154-protection.iranlease.com&path=%2F#v2ray_dalghak
-
-vless://7b471aa5-9344-4567-96a9-82bec6427f85@3.79.115.193:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-trojan://BxceQaOe@43.198.233.56:381?security=tls&insecure=1&headerType=none&type=tcp&allowInsecure=1&sni=t.me%252Fripaojiedian#v2ray_dalghak
-
-vless://d453b11a-5988-4b9a-9aca-5cfb9b336946@104.17.147.22:443?encryption=none&security=tls&sni=usc.ketabv.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=usc.ketabv.ir&path=%2FV9RZyjTD5QiH08HK8A2L9XMg%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night#v2ray_dalghak
-
-vless://3d4ea541-fe41-4bfd-abd2-ea25f7cd8b2b@88.216.61.177:102?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.google.com&fp=chrome&pbk=GBNgwUgC6qENKhW5lEqFPnjVQRZBo8kM1-6Zlg0aGmU&sid=45b71b76&type=tcp&headerType=none#v2ray_dalghak
-
-vless://8c06ed2a-5b7c-4d8a-8d5b-c2a7fa4a2e65@104.248.242.98:41541?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://5d455342-2929-45a0-951a-1b273ec39b7c@104.18.7.36:2086?encryption=none&security=none&type=ws&host=rayan11-0l5mxs7b-v1.rayan-11.workers.dev&path=%2F#v2ray_dalghak
-
-vless://3cadf249-13a2-413f-867a-a802964f914d@3.75.247.161:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?encryption=none&security=tls&sni=INDEX.Arcane509.Workers.DEV&alpn=http%2F1.1&fp=chrome&type=ws&host=index.arcane509.workers.dev&path=%2Fassets%3Fed%3D2048#v2ray_dalghak
-
-vless://403b2b80-703b-4498-eb92-96be57848d39@3.70.97.2:50256?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vless://5b002005-7fb1-413e-8cbd-08e50c87c2ea@104.18.4.46:8880?encryption=none&security=none&type=ws&host=wetfleagidc-8tsbi8xd-v3.wet-flea-gidc.workers.dev&path=%2F#v2ray_dalghak
-
-vless://971f8785-f10b-440d-8d3f-ff879df4715b@81.12.91.190:27000?encryption=none&security=none&type=ws&path=%2F#v2ray_dalghak
-
-vless://b42f7955-3741-406f-b95a-ed7b051ae5aa@77.239.125.99:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=6ba85179e30d4fc2#v2ray_dalghak
-
-vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@cosmin.ns.cloudflare.com:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&host=hetz.x-smm.com&fp=chrome&allowinsecure=0&type=ws&sni=hetz.x-smm.com#v2ray_dalghak
-
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@159.223.24.65:443?encryption=none&security=tls&sni=sni.111000.indevs.in&type=ws&host=sni.111000.indevs.in&path=%2F%3Fed%3D2560#v2ray_dalghak
-
-vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@clyde.ns.cloudflare.com:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&host=hetz.x-smm.com&fp=chrome&allowinsecure=0&type=ws&sni=hetz.x-smm.com#v2ray_dalghak
-
-vless://620e45f4-92f1-4be6-e118-3bc515509320@3.121.71.21:28279?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://e5f8a9f6-f164-479b-b3b5-b90f213c7145@104.21.224.5:2053?encryption=none&security=tls&sni=ir1.airpanel.top&allowInsecure=1&type=ws&host=ir1.airpanel.top&path=%2F#v2ray_dalghak
-
-vless://d6b1327d-2bec-4366-a3a1-9b1284f95841@109.120.190.203:1488?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=tcp&headerType=none#v2ray_dalghak
-
-vless://d28e35d3-2c23-4be5-c7a0-721bb001a76c@3.71.1.237:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@nodejs.org:443?encryption=none&security=tls&sni=dev.nestandneighbours.com&allowInsecure=1&type=ws&host=dev.nestandneighbours.com&path=%2F#v2ray_dalghak
-
-vless://0154d742-3233-4c61-f81c-7407fcf28b87@3.70.253.134:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vmess://eyJhZGQiOiAiMTMxLjE5Ni4yNTIuNTkiLCAiYWlkIjogMCwgImhvc3QiOiAiIiwgImlkIjogIjU4MDk5MTFhLWExNmUtNDNkMy05MGIwLTJjOTRjZmMyMDM1ZSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAyMDUyMSwgInBzIjogInYycmF5X2RhbGdoYWsiLCAidGxzIjogIiIsICJ0eXBlIjogImF1dG8iLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIiLCAibmFtZSI6ICJcdWQ4M2NcdWRkZjJcdWQ4M2NcdWRkZmRNWC0xMzEuMTk2LjI1Mi41OS0wMzEwIn0=
-
-vless://dacb912c-39ef-4fe0-d720-fadaa53111c0@3.72.6.34:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://de524de8-06a2-4026-c602-651f0304151b@3.70.171.93:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://a0891e86-ce1f-4e1b-e47c-84c890f1b130@18.185.94.14:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://eea43b1a-4411-4ff7-f5b4-a860a81cad63@3.123.128.216:28706?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://7d680304-b026-48fd-d8bf-6aa209b424c5@3.122.204.84:19592?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://4bb175e9-436c-4449-a5db-3ccbfcb28022@3.125.6.39:29044?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-vless://7a5dc2d1-8560-47de-8df9-2a1c5f8fd3ec@3.123.24.207:16763?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTQ3LjEzNS4yMTEuNjEiLCAicG9ydCI6ICI4MDgwIiwgImlkIjogImNkYzI3ODgwLWFjMmItNTkxZi1iNjc3LWZjYjAyZmNiNDI4YSIsICJhaWQiOiAiMCIsICJzY3kiOiAiY2hhY2hhMjAtcG9seTEzMDUiLCAibmV0IjogInRjcCIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICIiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgInRlc3RfbmFtZSI6ICIxOSJ9
-
-vless://cfb6d9ad-7a14-4061-b159-8902fd73bb41@198.41.202.5:2095?security=none&type=ws&host=DigiV2ray---_-_---DIGIq.radioTehran.org.#v2ray_dalghak
-
-vless://f32a99e8-05dd-478a-82c0-7688848121bd@47.243.74.220:8080?type=ws&host=mkhy.daozhang.link&path=%2F%3Fed%3D2048#v2ray_dalghak
-
-vless://7396c077-f5cb-4808-84ca-92f268d79b3d@3.64.178.32:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxWXU4TktxNUVIdjFVVFlXeWUyRmMya2RzRWs2akJFWHQ4QXI5RTI2bkJDaWpocldlandDWWtHejR3SzdvWFQ5Vjc1U2pMVGlTakJzRVNoV0ozSjVIZUYxNEpSQUtucUM=@mx2.drawnrisha.one:55988#v2ray_dalghak
-
-vless://c03a34be-4267-4763-b35f-5a5b5d3bcf80@77.107.88.4:1616?mode=auto&path=%2F%40bitnetvpn&security=&encryption=none&host=bitnetvpn.com&type=xhttp#v2ray_dalghak
-
-trojan://5fb072e0ddd631cf66cf752b09210480@54.95.118.21:3373?security=tls&insecure=1&headerType=none&type=tcp&allowInsecure=1&sni=www.nintendogames.net#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@38.68.134.196:800#v2ray_dalghak
-
-vless://bea4ddd0-a014-434e-9eb4-f9c8822bf19e@104.16.60.8:443?security=tls&sni=usa.freesdns.info&type=ws&host=usa.freesdns.info&path=/&fp=chrome&alpn=http/1.1#v2ray_dalghak
-
-ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@167.88.63.79:8090#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTQ3LjEzNS4yMTEuNjEiLCAicG9ydCI6ICI4MDgwIiwgImlkIjogImNkYzI3ODgwLWFjMmItNTkxZi1iNjc3LWZjYjAyZmNiNDI4YSIsICJhaWQiOiAiMCIsICJzY3kiOiAiY2hhY2hhMjAtcG9seTEzMDUiLCAibmV0IjogInRjcCIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICIiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgInRlc3RfbmFtZSI6ICIxOSJ9
-
-vless://cfb6d9ad-7a14-4061-b159-8902fd73bb41@198.41.202.5:2095?security=none&type=ws&host=DigiV2ray---_-_---DIGIq.radioTehran.org.#v2ray_dalghak
-
-vless://f32a99e8-05dd-478a-82c0-7688848121bd@47.243.74.220:8080?type=ws&host=mkhy.daozhang.link&path=%2F%3Fed%3D2048#v2ray_dalghak
-
-vless://7396c077-f5cb-4808-84ca-92f268d79b3d@3.64.178.32:443?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxWXU4TktxNUVIdjFVVFlXeWUyRmMya2RzRWs2akJFWHQ4QXI5RTI2bkJDaWpocldlandDWWtHejR3SzdvWFQ5Vjc1U2pMVGlTakJzRVNoV0ozSjVIZUYxNEpSQUtucUM=@mx2.drawnrisha.one:55988#v2ray_dalghak
-
-vless://c03a34be-4267-4763-b35f-5a5b5d3bcf80@77.107.88.4:1616?mode=auto&path=%2F%40bitnetvpn&security=&encryption=none&host=bitnetvpn.com&type=xhttp#v2ray_dalghak
-
-trojan://5fb072e0ddd631cf66cf752b09210480@54.95.118.21:3373?security=tls&insecure=1&headerType=none&type=tcp&allowInsecure=1&sni=www.nintendogames.net#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@38.68.134.196:800#v2ray_dalghak
-
-vless://bea4ddd0-a014-434e-9eb4-f9c8822bf19e@104.16.60.8:443?security=tls&sni=usa.freesdns.info&type=ws&host=usa.freesdns.info&path=/&fp=chrome&alpn=http/1.1#v2ray_dalghak
-
-ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@167.88.63.79:8090#v2ray_dalghak
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTI5LjE1MC42MS4xNzAiLCAicG9ydCI6ICIyOTQ5MyIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiYWMwZDAwNzYtOTNkMi00OGFkLWJhNmUtZWE1YzhkN2IwMTMyIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAiaG9zdCI6ICIxMjkuMTUwLjYxLjE3MCIsICJ0bHMiOiAiIn0=
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTI5LjE1OS4zMy4xOTkiLCAicG9ydCI6ICI0NTMyOCIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiODQyYzMzZmYtMzFiNS00MTBjLWE5NmUtMGNiNTJhOTlhNmRhIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAiaG9zdCI6ICIxMjkuMTU5LjMzLjE5OSIsICJ0bHMiOiAiIn0=
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:804#v2ray_dalghak
-
-vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.19.110.50:443?path=%2FTELEGRAM-MARAMBASHI-MARAMBASHI%2F%3Fed%3D2048&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:806#v2ray_dalghak
-
-vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&type=tcp&headerType=none#v2ray_dalghak
-
-vless://rootface-%40pwn1337-telegram@[::ffff:152.114.192.102]:80?encryption=none&security=none&type=ws&path=%2F%F0%92%89%AD%F0%93%86%A9%40rootface%F0%92%86%9C%F0%92%89%AD%20%40pwn_1337%20TELEGRAM#v2ray_dalghak
-
-vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@104.18.125.5:80?encryption=none&security=none&type=ws&host=lively-brook-c471.nedena3319.workers.dev&path=%2F%3Fed%3D2048#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://8b1d7c16-296b-4fbd-bb79-4107eadd12b2@172.239.239.189:39959?type=tcp&encryption=none&path=%2F&host=divar.ir&headerType=http&security=none#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTI5LjE1OS4zMy4xOTkiLCAicG9ydCI6ICI0NTMyOCIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiODQyYzMzZmYtMzFiNS00MTBjLWE5NmUtMGNiNTJhOTlhNmRhIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAiaG9zdCI6ICIxMjkuMTU5LjMzLjE5OSIsICJ0bHMiOiAiIn0=
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:804#v2ray_dalghak
-
-vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.19.110.50:443?path=%2FTELEGRAM-MARAMBASHI-MARAMBASHI%2F%3Fed%3D2048&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:806#v2ray_dalghak
-
-vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&type=tcp&headerType=none#v2ray_dalghak
-
-vless://rootface-%40pwn1337-telegram@[::ffff:152.114.192.102]:80?encryption=none&security=none&type=ws&path=%2F%F0%92%89%AD%F0%93%86%A9%40rootface%F0%92%86%9C%F0%92%89%AD%20%40pwn_1337%20TELEGRAM#v2ray_dalghak
-
-vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@104.18.125.5:80?encryption=none&security=none&type=ws&host=lively-brook-c471.nedena3319.workers.dev&path=%2F%3Fed%3D2048#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://8b1d7c16-296b-4fbd-bb79-4107eadd12b2@172.239.239.189:39959?type=tcp&encryption=none&path=%2F&host=divar.ir&headerType=http&security=none#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTI5LjE1OS4zMy4xOTkiLCAicG9ydCI6ICI0NTMyOCIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiODQyYzMzZmYtMzFiNS00MTBjLWE5NmUtMGNiNTJhOTlhNmRhIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAiaG9zdCI6ICIxMjkuMTU5LjMzLjE5OSIsICJ0bHMiOiAiIn0=
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:804#v2ray_dalghak
-
-vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.19.110.50:443?path=%2FTELEGRAM-MARAMBASHI-MARAMBASHI%2F%3Fed%3D2048&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:806#v2ray_dalghak
-
-vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&type=tcp&headerType=none#v2ray_dalghak
-
-vless://rootface-%40pwn1337-telegram@[::ffff:152.114.192.102]:80?encryption=none&security=none&type=ws&path=%2F%F0%92%89%AD%F0%93%86%A9%40rootface%F0%92%86%9C%F0%92%89%AD%20%40pwn_1337%20TELEGRAM#v2ray_dalghak
-
-vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@104.18.125.5:80?encryption=none&security=none&type=ws&host=lively-brook-c471.nedena3319.workers.dev&path=%2F%3Fed%3D2048#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://8b1d7c16-296b-4fbd-bb79-4107eadd12b2@172.239.239.189:39959?type=tcp&encryption=none&path=%2F&host=divar.ir&headerType=http&security=none#v2ray_dalghak
-
-vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@172.67.170.140:2053?path=%2Fassets%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=index.arcane509.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=INDEX.Arcane509.Workers.DEV#v2ray_dalghak
-
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@nodejs.org:443?path=%2F&security=tls&encryption=none&insecure=1&host=dev.nestandneighbours.com&type=ws&allowInsecure=1&sni=dev.nestandneighbours.com#v2ray_dalghak
+vless://2e594596-b59a-45ad-8b17-af0a245dacf2@vip-mega-vpnmga.megachatio.ir:24503?path=%2FVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2C&security=none&encryption=none&type=ws#v2ray_dalghak
 
  ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
     @v2ray_Dalghak
@@ -333,179 +212,302 @@ vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@nodejs.org:443?path=%2F&security=tl
 
 vless://bf2ca57a-06a0-11f1-9f7e-8f38e0f00e53@nl2.vpn.kim:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=nl2.wizard.select&fp=chrome&pbk=ELtVsaW5Vg-8XX7WPlSgZ1EZDIbFB1wVLPFNQSjlf2Y&sid=42217815&spx=%2F&type=tcp&headerType=none#v2ray_dalghak
 
-vless://57aba857-2479-459c-be0a-c167ff60c5c4@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
+vless://96d9bcb0-9ad2-48be-85a2-a9ab3a005261@104.18.32.47:2083?path=%2F&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=ds1-mx-fn154-protection.iranlease.com&type=ws&allowInsecure=1&sni=ds1-mx-fn154-protection.iranlease.com#v2ray_dalghak
 
-vless://b633661c-bdba-4929-a0df-01e3ebd476f0@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
+vless://b633661c-bdba-4929-a0df-01e3ebd476f0@188.0.247.176:56327?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
 
-vless://203e82ed-a6b7-416a-b04e-ba8a20d8a0c4@104.21.23.22:443?encryption=none&security=tls&sni=014.ELectRoceLlCO-Cf-014.worKeRS.dev&allowInsecure=1&type=ws&host=014.ELectRoceLlCO-Cf-014.worKeRS.dev&path=%2FeyJqdW5rIjoiQkdrUldRNHQzR2MzVHkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119#v2ray_dalghak
+vmess://eyJhZGQiOiAiODUuMTcuMTkyLjExMCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJibXcuY29tIiwgImlkIjogImVmOTg0ZDE5LTRkZjctNDU5Mi04Y2E4LWEzZjY1OGI3OGMwYSIsICJpbnNlY3VyZSI6ICIxIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAiMTY2MjMiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9
 
-vless://6c1bdaca-62d1-4ff8-8367-c1ab5451d75d@ravezh.v2moz.sbs:24807?encryption=none&security=none&type=xhttp&path=%2F&mode=auto#v2ray_dalghak
+vless://b42f7955-3741-406f-b95a-ed7b051ae5aa@77.239.125.99:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=google.com&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2&type=tcp&headerType=none#v2ray_dalghak
 
-vless://115af4cb-e1c2-42b2-b392-4c1c06a7d433@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
+vmess://eyJhZGQiOiAiODUuMTcuMTkyLjExMCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJmYXN0LmNvbSIsICJpZCI6ICJlZjk4NGQxOS00ZGY3LTQ1OTItOGNhOC1hM2Y2NThiNzhjMGEiLCAiaW5zZWN1cmUiOiAiMSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogIjE2NjIzIiwgInBzIjogInYycmF5X2RhbGdoYWsiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiaHR0cCIsICJ2IjogIjIifQ==
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.164.54.211:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%9F%A2%E1%B9%ACelegram%22%40Filtering2020%22&security=tls&encryption=none&insecure=1&host=sni.111000.indevs.in&type=ws&allowInsecure=1&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://d5c895c8-e64c-5bc3-b56a-be9f760f8250@5.35.36.39:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=eh.vk.com&fp=chrome&pbk=0Dp29aPPjPglX26NOlqnfbKLCZ6id2OQCiO-SVo76BI&sid=9ce128ed0237&type=tcp&headerType=none#v2ray_dalghak
 
 vless://1332320d-7153-4bb1-9e87-6a57c661a576@u.takspeed.shop:2086?encryption=none&security=none&type=ws&path=%2F#v2ray_dalghak
 
-vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@104.20.1.252:80?encryption=none&security=none&type=ws&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed#v2ray_dalghak
+vless://352f047c-3176-4271-9bc6-3f7d33ee03c7@riali22.carpet-carpet-carped.ir:2018/?type=tcp&encryption=none&sni=ub.com&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=firefox&security=reality&pbk=pY4Vwx68IazGJq4BPHFVAXzmQhOz9DmKjpNM2CSxehc&sid=83f404#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://bf2ca57a-06a0-11f1-9f7e-8f38e0f00e53@nl2.vpn.kim:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=nl2.wizard.select&fp=chrome&pbk=ELtVsaW5Vg-8XX7WPlSgZ1EZDIbFB1wVLPFNQSjlf2Y&sid=42217815&spx=%2F&type=tcp&headerType=none#v2ray_dalghak
+
+vless://96d9bcb0-9ad2-48be-85a2-a9ab3a005261@104.18.32.47:2083?path=%2F&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=ds1-mx-fn154-protection.iranlease.com&type=ws&allowInsecure=1&sni=ds1-mx-fn154-protection.iranlease.com#v2ray_dalghak
+
+vless://b633661c-bdba-4929-a0df-01e3ebd476f0@188.0.247.176:56327?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vmess://eyJhZGQiOiAiODUuMTcuMTkyLjExMCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJibXcuY29tIiwgImlkIjogImVmOTg0ZDE5LTRkZjctNDU5Mi04Y2E4LWEzZjY1OGI3OGMwYSIsICJpbnNlY3VyZSI6ICIxIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAiMTY2MjMiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9
+
+vless://b42f7955-3741-406f-b95a-ed7b051ae5aa@77.239.125.99:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=google.com&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sid=6ba85179e30d4fc2&type=tcp&headerType=none#v2ray_dalghak
+
+vmess://eyJhZGQiOiAiODUuMTcuMTkyLjExMCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJmYXN0LmNvbSIsICJpZCI6ICJlZjk4NGQxOS00ZGY3LTQ1OTItOGNhOC1hM2Y2NThiNzhjMGEiLCAiaW5zZWN1cmUiOiAiMSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogIjE2NjIzIiwgInBzIjogInYycmF5X2RhbGdoYWsiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiaHR0cCIsICJ2IjogIjIifQ==
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.164.54.211:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%9F%A2%E1%B9%ACelegram%22%40Filtering2020%22&security=tls&encryption=none&insecure=1&host=sni.111000.indevs.in&type=ws&allowInsecure=1&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://d5c895c8-e64c-5bc3-b56a-be9f760f8250@5.35.36.39:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=eh.vk.com&fp=chrome&pbk=0Dp29aPPjPglX26NOlqnfbKLCZ6id2OQCiO-SVo76BI&sid=9ce128ed0237&type=tcp&headerType=none#v2ray_dalghak
+
+vless://1332320d-7153-4bb1-9e87-6a57c661a576@u.takspeed.shop:2086?encryption=none&security=none&type=ws&path=%2F#v2ray_dalghak
+
+vless://352f047c-3176-4271-9bc6-3f7d33ee03c7@riali22.carpet-carpet-carped.ir:2018/?type=tcp&encryption=none&sni=ub.com&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=firefox&security=reality&pbk=pY4Vwx68IazGJq4BPHFVAXzmQhOz9DmKjpNM2CSxehc&sid=83f404#v2ray_dalghak
+
+vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@104.21.40.34:443?path=%2F&security=tls&encryption=none&insecure=1&host=dev.twistsparrow.xyz&type=ws&allowInsecure=1&sni=dev.twistsparrow.xyz#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vmess://eyJuZXQiOiAidGNwIiwgImFkZCI6ICIxNzIuMjMzLjIyOS45MSIsICJzY3kiOiAiYXV0byIsICJob3N0IjogIiIsICJpZCI6ICIyN2JhODdmYy01ODNmLTQ3NjMtOTA2MC04M2NmMGI5MjY0ZGIiLCAidHlwZSI6ICJub25lIiwgInBhdGgiOiAiIiwgInBzIjogInYycmF5X2RhbGdoYWsiLCAicG9ydCI6ICIxNDEwMiJ9
+
+vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@cosmin.ns.cloudflare.com:2096?encryption=none&security=tls&sni=hetz.x-smm.com&fp=chrome&type=ws&host=hetz.x-smm.com&path=%2F45.76.183.217%3D49292#v2ray_dalghak
+
+vless://61076cc8-6d63-4dbf-80b9-6c6d70f934ab@wolfb04.serverp1anel.ir:8080?security=reality&encryption=none&pbk=D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=chatgpt.com&sid=b7b70c104ad267b8#v2ray_dalghak
+
+vless://05dc09d5-5c56-454b-a34e-6ef743d91e1a@netherland.boot-lee.ru:8443?security=reality&encryption=none&pbk=3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28&host=TELEGRAM&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru&sid=abc123#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@b2n.ir:443?path=%2F%3Fed%3D443&security=tls&encryption=none&insecure=0&host=b2ncdn213142156116.reservedns.com&fp=randomized&type=ws&allowInsecure=0&sni=b2ncdn213142156116.reservedns.com#v2ray_dalghak
+
+vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443?path=%2F%3Fed%3D512%26%2FJoin-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
+
+vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode=gun&security=&encryption=none&type=grpc#v2ray_dalghak
+
+trojan://humanity@104.21.40.34:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#v2ray_dalghak
+
+vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
+
+vless://639355ae-d9ef-4470-aa8a-8154f637cf52@wolfa21.timevip.ir:8080?security=reality&encryption=none&pbk=D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=chatgpt.com&sid=b7b70c104ad267b8#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@199.119.137.95:2053?path=%2F%3Fed&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://2fa7f6dc-1367-4b1e-bf59-865b90959ce8@tun1-norbert.norbertvip-conf.site:9900?security=&encryption=none&host=cafeariel.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://61076cc8-6d63-4dbf-80b9-6c6d70f934ab@wolfb17.serverp1anel.ir:8080?security=reality&encryption=none&pbk=D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=chatgpt.com&sid=b7b70c104ad267b8#v2ray_dalghak
+
+trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#v2ray_dalghak
+
+trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@cdnirs207.b2n.ir.nic.stp.debian.org.ubuntu.ir.reservedns.website:1095?security=none&encryption=none&host=soft98.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@ipbaz.ping-box.com:443?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&fp=chrome&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@cdnirs207.b2n.ir.nic.stp.debian.org.ubuntu.ir.reservedns.website:1087?security=none&encryption=none&host=soft98.ir&headerType=http&type=tcp#v2ray_dalghak
+
+vless://3b725c8f-4555-4442-9295-fd733a9cd9d9@ash-peak.vm.twilightparadox.com:2010?security=&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://b7441e96-af94-4339-8538-57620c058a7a@pay.golnar-clod.ir:44823?security=reality&encryption=none&pbk=GjzZBXOPF__64q-iiVAgj6S3DgCYNOGkdY5M4smyfGg&headerType=none&fp=firefox&type=tcp&sni=tgju.org&sid=5b2025e2ba3f22#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://b7441e96-af94-4339-8538-57620c058a7a@tun5.golnar-clod.ir:18419?security=reality&encryption=none&pbk=pWTqnxx9H96bCcegm3REXczLjMhhwDQD47YQvvv8dBo&headerType=none&fp=firefox&type=tcp&sni=tgju.org&sid=2717acba9a2372c0#v2ray_dalghak
+
+trojan://5fb072e0ddd631cf66cf752b09210480@202.181.103.246:3076?security=tls&sni=www.nintendogames.net#v2ray_dalghak
+
+trojan://telegram-id-privatevpns@3.122.189.42:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak
+
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJbnYxMTRkcDJ6azlaYllGUHBkUWY0@31.3.209.106:46551?#v2ray_dalghak
+
+vless://4c97ec3e-3527-48c5-80ff-b715463896ba@172.66.128.70:80?encryption=none&security=none&type=ws&host=kIndhEArTeD-PARkb5Rjo2juEr.sPorTLaNd.COMpAny.&path=%2F%3Fed#v2ray_dalghak
+
+vless://c4b3fb2b-6ea0-4825-82d0-e315a0898f46@104.17.147.22:443?encryption=none&security=tls&sni=dec.ketabv.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=dec.ketabv.ir&path=%2Fsy5RZsmo3iYVIROnda%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night---%23TELEGRAM-anotherme_night#v2ray_dalghak
+
+vmess://eyJ0eXBlIjogIm5vbmUiLCAidGxzIjogIm5vbmUiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJuZXQiOiAidGNwIiwgImFkZCI6ICI5NC4xODQuMTAuNDIiLCAiaWQiOiAiZGQ0Y2YwMmYtMTNkNC00NTgxLWI5MzAtN2NkOTkzNmRlZWVlIiwgInBvcnQiOiAiNDQzIiwgInNjeSI6ICJhdXRvIn0=
+
+trojan://hI70tn0ifx@162.159.198.189:443?path=%2FhI70tn0ifx%3Fed%3D128&security=tls&alpn=http%2F1.1&insecure=0&host=my-new-worker.khiarshorplus.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=my-new-worker.khiarshorplus.workers.dev#v2ray_dalghak
+
+vless://9897f9f0-ee1d-4428-8a97-4a248751d5c5@147.45.243.234:4443?security=reality&encryption=none&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com&sid=aa7e96542880027a#v2ray_dalghak
+
+vless://ccc31dce-be31-4609-8e8f-6c06c77f49f6@mm.helg.ir:31466?type=tcp&security=none&headerType=http&path=/&host=speedtest.net#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://88181007-9bb3-4e6c-826d-4400b191b8d7@135.125.174.103:37928?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://0ac82530-7efa-4df0-9c95-1643aff9256f@91.107.179.39:22595?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.42.89.138:2096?security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@62.72.166.138:2096?security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.16.91.38:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=api-tr.nping.ir#v2ray_dalghak
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@162.159.198.189:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&insecure=0&host=api-pl.serx.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=api-pl.serx.ir#v2ray_dalghak
+
+vless://f88f3298-8361-4021-9ba1-773551b0aa0c@info.violent.sbs:5640?security=none&encryption=none&host=p30afzar.com&headerType=http&type=tcp#v2ray_dalghak
+
+vmess://eyJhZGQiOiAiODUuMTcuMTkyLjExMCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJmYXN0LmNvbSIsICJpZCI6ICJlZjk4NGQxOS00ZGY3LTQ1OTItOGNhOC1hM2Y2NThiNzhjMGEiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICIxNjYyMyIsICJwcyI6ICJ2MnJheV9kYWxnaGFrIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogImh0dHAiLCAidiI6ICIyIn0=
+
+vless://6d39596c-b569-4a61-86c3-28cfb83a4c95@87.239.107.214:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=m.vk.ru&fp=chrome&security=reality&pbk=Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc&sid=8f222b3475800821#v2ray_dalghak
+
+vless://2e961d80-b55f-4d56-95c9-0da5798f3750@info.violent.sbs:5640?security=none&encryption=none&host=p30afzar.com&headerType=http&type=tcp#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.25.255.94:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&insecure=0&host=api-uk.nping.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=api-uk.nping.ir#v2ray_dalghak
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.42.89.138:2096?security=tls&encryption=none&type=ws&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@62.72.166.138:2096?security=tls&encryption=none&type=ws&sni=sni.111000.indevs.in#v2ray_dalghak
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.16.91.38:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&fp=chrome&type=xhttp&sni=api-tr.nping.ir#v2ray_dalghak
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@162.159.198.189:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&host=api-pl.serx.ir&fp=chrome&type=xhttp&sni=api-pl.serx.ir#v2ray_dalghak
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.25.255.94:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&host=api-uk.nping.ir&fp=chrome&type=xhttp&sni=api-uk.nping.ir#v2ray_dalghak
+
+trojan://humanity@104.21.40.34:443?path=%2Fassignment&security=tls&host=www.gossipglove.com&type=ws&sni=www.gossipglove.com#v2ray_dalghak
+
+vless://2762ce23-74a4-4673-a0f1-2387c1b6cf68@172.239.240.91:46240?encryption=none&security=none&type=tcp&headerType=http&host=divar.ir#v2ray_dalghak
+
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@62.72.166.138:2096?encryption=none&security=tls&sni=sni.111000.indevs.in&type=ws&path=%2F#v2ray_dalghak
+
+vless://61076cc8-6d63-4dbf-80b9-6c6d70f934ab@wolfb04.serverp1anel.ir:8080?encryption=none&flow=xtls-rprx-vision&security=reality&sni=chatgpt.com&fp=firefox&pbk=D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw&sid=b7b70c104ad267b8&type=tcp&headerType=none#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@162.159.198.189:443?encryption=none&security=tls&sni=api-pl.serx.ir&alpn=h2&fp=chrome&type=xhttp&host=api-pl.serx.ir&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&mode=auto#v2ray_dalghak
+
+ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206ZXRVOC9mdkNWUGFxbUtrWFY2Ylg4djhVTEk0RmNoK0VLdmcxOU1vRVRMaz0@57.131.41.129:8390#v2ray_dalghak
 
 vless://352f047c-3176-4271-9bc6-3f7d33ee03c7@riali22.carpet-carpet-carped.ir:2018?security=reality&encryption=none&pbk=pY4Vwx68IazGJq4BPHFVAXzmQhOz9DmKjpNM2CSxehc&headerType=none&fp=firefox&type=tcp&sni=ub.com&sid=83f404#v2ray_dalghak
 
-vless://ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a@104.20.1.252:80?path=%2F%3Fed&security=&encryption=none&host=WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY.&type=ws#v2ray_dalghak
+trojan://humanity@104.21.40.34:443?security=tls&sni=www.gossipglove.com&allowInsecure=1&type=ws&host=www.gossipglove.com&path=%2Fassignment#v2ray_dalghak
 
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-trojan://humanity@104.18.32.47:443?path=%2Fassignment&security=tls&host=www.multiplydose.com&fp=chrome&type=ws&sni=www.multiplydose.com#v2ray_dalghak
-
-vless://505997ba-cbdb-466e-a3ad-69c6a4553b38@151.101.25.242:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=pizzabama.global.ssl.fastly.net&type=ws#v2ray_dalghak
-
-vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@172.66.128.70:80?path=%2F%3Fed&security=&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#v2ray_dalghak
-
-trojan://humanity@188.114.98.0:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.multiplydose.com#v2ray_dalghak
-
-vless://1621caa6-2a23-4364-919b-1276ab6ca81a@no.tan3.ir:2053?mode=auto&security=tls&alpn=h2&encryption=none&insecure=0&host=ax.tan3.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ax.tan3.ir#v2ray_dalghak
-
-trojan://humanity@104.18.32.47:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.calmlunch.com#v2ray_dalghak
-
-vless://a26bbed7-a286-4840-84bc-dc102c526777@speedtest.net:80?mode=auto&path=%2Fcategory%2Fmusic&security=&encryption=none&host=iran.boltboost.gg&type=xhttp#v2ray_dalghak
-
-vless://4c97ec3e-3527-48c5-80ff-b715463896ba@104.20.1.252:80?path=%2F%3Fed&security=&encryption=none&host=kIndhEArTeD-PARkb5Rjo2juEr.sPorTLaNd.COMpAny.&type=ws#v2ray_dalghak
-
-vless://e9af1f6d-98b0-4b08-8f0d-d54a7251e462@i.maxpn.top:2083?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
-
-trojan://humanity@188.114.98.0:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.creationlong.org#v2ray_dalghak
-
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.181:23576?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&type=tcp&headerType=none#v2ray_dalghak
-
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&host=www.calmlunch.com&type=ws&sni=www.calmlunch.com#v2ray_dalghak
-
-vless://e9b6ec3e-9e8c-43a0-9049-566b5b179b71@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
-
-vless://65fe56c2-78ec-417a-a666-9f393eac8b61@104.20.1.252:80?path=%2F%3Fed&security=&encryption=none&host=everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.&type=ws#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@38.68.134.196:800#v2ray_dalghak
-
-vmess://eyJhZGQiOiAibjE3NjEyMTQ5MTkubXY3d2gudGVjaCIsICJhaWQiOiAwLCAiaG9zdCI6ICJuMTc2MTIxNDkxOS5tdjd3aC50ZWNoIiwgImlkIjogImM1OTJmMDQwLWZhZmYtNDdkYy1hNDY0LTliY2NmMmRkNGU3YiIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBvcnQiOiA0NDMsICJwcyI6ICJ2MnJheV9kYWxnaGFrIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLCAic25pIjogIm4xNzYxMjE0OTE5Lm12N3doLnRlY2gifQ==
-
-vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?security=reality&encryption=none&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=apple.com#v2ray_dalghak
-
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@104.21.40.34:443?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
-
-vless://d5c895c8-e64c-5bc3-b56a-be9f760f8250@5.35.36.39:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=0Dp29aPPjPglX26NOlqnfbKLCZ6id2OQCiO-SVo76BI&security=reality&sid=9ce128ed0237&sni=eh.vk.com&type=tcp#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.creationlong.org#v2ray_dalghak
-
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.181:23576?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&type=tcp&headerType=none#v2ray_dalghak
-
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&host=www.calmlunch.com&type=ws&sni=www.calmlunch.com#v2ray_dalghak
-
-vless://e9b6ec3e-9e8c-43a0-9049-566b5b179b71@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
-
-vless://65fe56c2-78ec-417a-a666-9f393eac8b61@104.20.1.252:80?path=%2F%3Fed&security=&encryption=none&host=everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.&type=ws#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@38.68.134.196:800#v2ray_dalghak
-
-vmess://eyJhZGQiOiAibjE3NjEyMTQ5MTkubXY3d2gudGVjaCIsICJhaWQiOiAwLCAiaG9zdCI6ICJuMTc2MTIxNDkxOS5tdjd3aC50ZWNoIiwgImlkIjogImM1OTJmMDQwLWZhZmYtNDdkYy1hNDY0LTliY2NmMmRkNGU3YiIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBvcnQiOiA0NDMsICJwcyI6ICJ2MnJheV9kYWxnaGFrIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLCAic25pIjogIm4xNzYxMjE0OTE5Lm12N3doLnRlY2gifQ==
-
-vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?security=reality&encryption=none&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=apple.com#v2ray_dalghak
-
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@104.21.40.34:443?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
-
-vless://d5c895c8-e64c-5bc3-b56a-be9f760f8250@5.35.36.39:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=0Dp29aPPjPglX26NOlqnfbKLCZ6id2OQCiO-SVo76BI&security=reality&sid=9ce128ed0237&sni=eh.vk.com&type=tcp#v2ray_dalghak
-
-vless://133d44b7-170e-41cd-a0cc-0b35470823bb@195.201.222.173:32916?encryption=none&fp=firefox&pbk=Vf2gG3NUXw728geRwr-lSqNf1xz8VZwm29FRkimd_WU&security=reality&sid=53c752b191ca&sni=tgju.org&spx=%2FaP77aAs2QYPNers&type=tcp#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.creationlong.org#v2ray_dalghak
-
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@57.129.53.181:23576?encryption=none&flow=xtls-rprx-vision&security=reality&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&type=tcp&headerType=none#v2ray_dalghak
-
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&host=www.calmlunch.com&type=ws&sni=www.calmlunch.com#v2ray_dalghak
-
-vless://e9b6ec3e-9e8c-43a0-9049-566b5b179b71@188.0.247.176:56327?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
-
-vless://65fe56c2-78ec-417a-a666-9f393eac8b61@104.20.1.252:80?path=%2F%3Fed&security=&encryption=none&host=everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.&type=ws#v2ray_dalghak
-
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@38.68.134.196:800#v2ray_dalghak
-
-vmess://eyJhZGQiOiAibjE3NjEyMTQ5MTkubXY3d2gudGVjaCIsICJhaWQiOiAwLCAiaG9zdCI6ICJuMTc2MTIxNDkxOS5tdjd3aC50ZWNoIiwgImlkIjogImM1OTJmMDQwLWZhZmYtNDdkYy1hNDY0LTliY2NmMmRkNGU3YiIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBvcnQiOiA0NDMsICJwcyI6ICJ2MnJheV9kYWxnaGFrIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IGZhbHNlLCAic25pIjogIm4xNzYxMjE0OTE5Lm12N3doLnRlY2gifQ==
-
-vless://193c75c1-1af1-484a-84ec-14de4828d209@de.griffon-guard.com:8443?security=reality&encryption=none&pbk=IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=apple.com#v2ray_dalghak
-
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@104.21.40.34:443?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
-
-vless://d5c895c8-e64c-5bc3-b56a-be9f760f8250@5.35.36.39:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=0Dp29aPPjPglX26NOlqnfbKLCZ6id2OQCiO-SVo76BI&security=reality&sid=9ce128ed0237&sni=eh.vk.com&type=tcp#v2ray_dalghak
-
-vless://133d44b7-170e-41cd-a0cc-0b35470823bb@195.201.222.173:32916?encryption=none&fp=firefox&pbk=Vf2gG3NUXw728geRwr-lSqNf1xz8VZwm29FRkimd_WU&security=reality&sid=53c752b191ca&sni=tgju.org&spx=%2FaP77aAs2QYPNers&type=tcp#v2ray_dalghak
-
-vless://3c5c4ccc-b502-42cb-8c42-cfa714db4767@212.111.84.82:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=m.vk.ru&fp=chrome&security=reality&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&sid=f4b4a6365558ea2e#v2ray_dalghak
-
- ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
-    @v2ray_Dalghak
-
------
-
-vless://ff6fb512-147d-419a-9672-e131133f7189@lt-cherry-01.com:8443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&security=reality&sid=e0ef3d5c0aacb615&sni=tradingview.com&type=tcp#v2ray_dalghak
-
-ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@15.204.247.49:12000#v2ray_dalghak
-
-vless://b42f7955-3741-406f-b95a-ed7b051ae5aa@77.239.125.99:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sid=6ba85179e30d4fc2&sni=google.com&type=tcp#v2ray_dalghak
+vless://19a1e5b1-6289-4fe6-9aad-be285510942d@av.nexconnx.com:8080?security=none&encryption=none&host=check-host.net&headerType=http&type=tcp#v2ray_dalghak
 
 ss://YWVzLTI1Ni1nY206OEpDc1Bzc2ZnUzh0aVJ3aU1saEFSZz09@144.217.164.29:12000#v2ray_dalghak
 
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.64:38388#v2ray_dalghak
+trojan://humanity@172.64.152.23:443?security=tls&sni=www.calmlunch.com&type=ws&host=www.calmlunch.com&path=%2Fassignment#v2ray_dalghak
 
-vless://10ed0abe-4556-48e4-8d9e-1681fd5762ac@5.75.192.248:39612?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+trojan://humanity@172.64.152.23:443?security=tls&sni=www.creationlong.org&type=ws&host=www.creationlong.org&path=%2Fassignment#v2ray_dalghak
 
-vless://2e594596-b59a-45ad-8b17-af0a245dacf2@vip-mega-vpnmga.megachatio.ir:24503?path=%2FVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2CVPNMEGA1%2C&security=none&encryption=none&type=ws#v2ray_dalghak
+vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443?encryption=none&security=tls&sni=dev.twistsparrow.xyz&type=ws&host=dev.twistsparrow.xyz&path=%2F%3Fed%3D512%26%2FJoin-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-Join-V2rayTun0-#v2ray_dalghak
 
-vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@104.18.125.5:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=lively-brook-c471.nedena3319.workers.dev&type=ws#v2ray_dalghak
-
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTI5LjE1OS4zMy4xOTkiLCAicG9ydCI6ICI0NTMyOCIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiODQyYzMzZmYtMzFiNS00MTBjLWE5NmUtMGNiNTJhOTlhNmRhIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAiaG9zdCI6ICIxMjkuMTU5LjMzLjE5OSIsICJ0bHMiOiAiIn0=
-
-ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@167.88.63.79:8090#v2ray_dalghak
+vless://04aa339a-b1ad-4b5c-8894-165d859730eb@pol2.creativelife.monster:37962?encryption=none&security=none&type=tcp&headerType=none#v2ray_dalghak
 
  ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
     @v2ray_Dalghak
 
 -----
 
-vless://bea4ddd0-a014-434e-9eb4-f9c8822bf19e@104.16.60.8:443?security=tls&sni=usa.freesdns.info&type=ws&host=usa.freesdns.info&path=/&fp=chrome&alpn=http/1.1#v2ray_dalghak
+vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.42.89.138:2096?encryption=none&security=tls&sni=sni.111000.indevs.in&type=ws&path=%2F#v2ray_dalghak
 
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:806#v2ray_dalghak
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.25.255.94:443?encryption=none&security=tls&sni=api-uk.nping.ir&alpn=h2&fp=chrome&type=xhttp&host=api-uk.nping.ir&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&mode=auto#v2ray_dalghak
 
-vless://d9eb0df3-3190-4447-86b6-656fe5ff1119@104.19.110.50:443?path=%2FTELEGRAM-MARAMBASHI-MARAMBASHI%2F%3Fed%3D2048&security=tls&encryption=none&host=mmdv2.pages.dev&type=ws&sni=mmdv2.pages.dev#v2ray_dalghak
+vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.16.91.38:443?encryption=none&security=tls&sni=api-tr.nping.ir&alpn=h2&fp=chrome&type=xhttp&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&mode=auto#v2ray_dalghak
 
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@62.216.92.167:804#v2ray_dalghak
+vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@104.17.147.22:2096?encryption=none&security=tls&sni=hetz.x-smm.com&insecure=0&allowInsecure=0&type=ws&host=hetz.x-smm.com&path=%2F45.76.183.217%3D49292#v2ray_dalghak
 
-vmess://eyJ2IjogIjIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJhZGQiOiAiMTI5LjE1MC42MS4xNzAiLCAicG9ydCI6ICIyOTQ5MyIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAiYWMwZDAwNzYtOTNkMi00OGFkLWJhNmUtZWE1YzhkN2IwMTMyIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAiaG9zdCI6ICIxMjkuMTUwLjYxLjE3MCIsICJ0bHMiOiAiIn0=
+vless://7c63f43f-f526-49bb-b5c8-2be26e11ef00@181.214.231.180:443?allowInsecure=1&alpn=h2&encryption=none&fp=firefox&insecure=1&mode=stream-one&path=%2Fstatue&security=tls&sni=statue.lnmarketplace.net&type=xhttp#v2ray_dalghak
 
-vless://2eba7b85-1c27-45f5-89a0-1a207e581bd9@new.vp.bloggershop.ir:32027?type=tcp&encryption=none&security=none#v2ray_dalghak
+trojan://telegram-id-p#v2ray_dalghak
 
-vless://d4c244cd-fb79-478a-be50-7ea889491270@140.248.128.0:80?mode=auto&path=%2Fxhttp&security=none&encryption=none&host=hazaranetwork.bh&type=xhttp#v2ray_dalghak
+vless://b03585ff-1e74-4767-b2a5-72107f127088@82.25.145.95:26446?type=ws&encryption=none&path=%2F&host=&security=none#v2ray_dalghak
 
-vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@172.67.180.92:443?path=Telegram-%2F-%2F-%2F-%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=web.abcallcenter.com&fp=chrome&type=ws&allowInsecure=0&sni=web.abcallcenter.com#v2ray_dalghak
+vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.halazzon.ir:2053?path=%2F&security=tls&encryption=none&insecure=0&host=ir6.hnbyme.online&fp=chrome&type=ws&allowInsecure=0&sni=ir6.hnbyme.online#v2ray_dalghak
 
-vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#v2ray_dalghak
+vless://b3b8a57d-87af-4228-9577-d38628e8bf94@94.182.128.221:5280?security=none&encryption=none&host=varzesh3.com&headerType=http&type=tcp#v2ray_dalghak
 
-vless://cf1b548b-4ab0-43fe-b000-330d42ec2a95@62.60.159.133:13179?security=none&encryption=none&headerType=none&type=tcp#v2ray_dalghak
+vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode=gun&security=none&encryption=none&type=grpc#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://ccc31dce-be31-4609-8e8f-6c06c77f49f6@mm.helg.ir:31466?type=tcp&security=none&headerType=http#v2ray_dalghak
+
+vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@18.195.91.205:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#v2ray_dalghak
+
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpndmFVQzBJS0FDbm84cDA1RllaTG9N@kazakhstan25.clearorbitllc.com:52323#v2ray_dalghak
+
+vless://ff6fb512-147d-419a-9672-e131133f7189@lt-cherry-01.com:8443?security=reality&encryption=none&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=tradingview.com&sid=e0ef3d5c0aacb615#v2ray_dalghak
+
+trojan://telegram-id-directvpn@18.195.91.205:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak
+
+vless://05dc09d5-5c56-454b-a34e-6ef743d91e1a@netherland.boot-lee.ru:8443?security=reality&encryption=none&pbk=3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru&sid=abc123#v2ray_dalghak
+
+trojan://telegram-id-privatevpns@18.195.91.205:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak
+
+vless://6fd9f786-d974-49d0-b5c4-397678de69a2@nld14.freednet.org:443?security=reality&encryption=none&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=www.cybo.com#v2ray_dalghak
+
+vless://3591d9e2-edbf-43f1-98dc-00eb607b8c46@85.133.197.236:9828?security=none&encryption=none&host=pro30afzar.com&headerType=http&type=tcp#v2ray_dalghak
+
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@172.67.180.92:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=web.abcallcenter.com&path=/--Telegram---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed%3D2560&sni=web.abcallcenter.com&fp=chrome&alpn=http/1.1#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.93:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
+
+vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@v1.dabache.top:443?path=%2Fassetsfp%3Dchrome&security=tls&encryption=none&insecure=0&host=DiprOX.pages.DEV&fp=chrome&type=ws&allowInsecure=0&sni=DiprOX.pages.DEV#v2ray_dalghak
+
+vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@108.162.198.154:443?path=%2Ffp%3Dchrome&security=tls&encryption=none&insecure=0&host=DiprOX.pages.DEV&fp=chrome&type=ws&allowInsecure=0&sni=DiprOX.pages.DEV#v2ray_dalghak
+
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@172.67.180.92:443?path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=web.abcallcenter.com&fp=chrome&type=ws&allowInsecure=0&sni=web.abcallcenter.com#v2ray_dalghak
+
+vless://bf3e8944-8d26-47de-8748-b9aa74cce974@140.238.100.35:40721?security=reality&encryption=none&pbk=TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=df8611c07d#v2ray_dalghak
+
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@172.67.180.92:443?path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=web.abcallcenter.com&fp=chrome&type=ws&sni=web.abcallcenter.com#v2ray_dalghak
+
+vless://38cd2307-6a10-49d4-a142-f7044742f2af@172.64.152.23:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&insecure=0&host=api-ws-de.nxping.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=api-ws-de.nxping.ir#v2ray_dalghak
+
+vless://2a9ed01e-5455-44b4-a66a-76ee8165f0ac@77.73.232.61:19747?security=reality&encryption=none&pbk=ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=2001#v2ray_dalghak
+
+vless://0e6cd6ca-fba2-4b86-923c-f0a021f7ad15@142.132.140.143:1003?type=tcp&security=none#v2ray_dalghak
+
+ss://Y2hhY2hhMjAtcG9seTEzMDU6NmUzZTQzZjQtMTJiNy00MmYxLThiOTMtNDFhMTUyZDU2MTJk@78.38.246.150:8446#v2ray_dalghak
+
+ ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
+    @v2ray_Dalghak
+
+-----
+
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.93:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#v2ray_dalghak
+
+vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@v1.dabache.top:443?path=%2Fassetsfp%3Dchrome&security=tls&encryption=none&insecure=0&host=DiprOX.pages.DEV&fp=chrome&type=ws&allowInsecure=0&sni=DiprOX.pages.DEV#v2ray_dalghak
+
+vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@108.162.198.154:443?path=%2Ffp%3Dchrome&security=tls&encryption=none&insecure=0&host=DiprOX.pages.DEV&fp=chrome&type=ws&allowInsecure=0&sni=DiprOX.pages.DEV#v2ray_dalghak
+
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@172.67.180.92:443?path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=web.abcallcenter.com&fp=chrome&type=ws&allowInsecure=0&sni=web.abcallcenter.com#v2ray_dalghak
+
+vless://bf3e8944-8d26-47de-8748-b9aa74cce974@140.238.100.35:40721?security=reality&encryption=none&pbk=TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=df8611c07d#v2ray_dalghak
+
+vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@172.67.180.92:443?path=%2F--Telegram---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=web.abcallcenter.com&fp=chrome&type=ws&sni=web.abcallcenter.com#v2ray_dalghak
+
+vless://38cd2307-6a10-49d4-a142-f7044742f2af@172.64.152.23:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&insecure=0&host=api-ws-de.nxping.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=api-ws-de.nxping.ir#v2ray_dalghak
+
+vless://2a9ed01e-5455-44b4-a66a-76ee8165f0ac@77.73.232.61:19747?security=reality&encryption=none&pbk=ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=2001#v2ray_dalghak
+
+vless://0e6cd6ca-fba2-4b86-923c-f0a021f7ad15@142.132.140.143:1003?type=tcp&security=none#v2ray_dalghak
+
+ss://Y2hhY2hhMjAtcG9seTEzMDU6NmUzZTQzZjQtMTJiNy00MmYxLThiOTMtNDFhMTUyZDU2MTJk@78.38.246.150:8446#v2ray_dalghak
+
+trojan://humanity@www.host-tracker.com:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#v2ray_dalghak
 
  ✅🤡دلقک ۲۴ ساعته کانفیگ v2ray میفرسته. حجم کانفیگ ها زیاده چون سرعت فیلترینگ شدیده. کافیه چند وقتی یبار همه‌ی پیام هارو کپی و اد کنید توی نرم افزار. بعد تست بگیرید و اونایی که کار میکنن رو نگه دارید
     @v2ray_Dalghak
