@@ -1,11 +1,14 @@
 # Telegram Channel to GitHub Pages (normal.txt + sub.txt)
 
-این ریپو خروجی ۱۰۰ پیام آخر کانال تلگرام را از نسخه‌ی عمومی (`t.me/s/...`) استخراج می‌کند، لینک‌های کانفیگ را جدا می‌کند و دو فایل می‌سازد: `normal.txt` (لینک‌ها) و `sub.txt` (Base64 استاندارد V2Ray subscription). به‌روزرسانی خودکار هر ۱۵ دقیقه انجام می‌شود.
+این ریپو خروجی ۱۰۰ پیام آخر کانال تلگرام را از نسخه‌ی عمومی (`t.me/s/...`) استخراج می‌کند، لینک‌های کانفیگ را جدا می‌کند و فایل‌های خروجی را می‌سازد: `normal.txt` (همه لینک‌ها)، `sub.txt` (Base64 استاندارد V2Ray subscription)، و خروجی‌های Splitted-By-Protocol برای `vless`/`vmess`/`trojan`. به‌روزرسانی خودکار هر ۱۵ دقیقه انجام می‌شود.
 
 ## ساختار فایل‌ها
 - `scripts/fetch.js` : اسکریپت اسکرپ و تولید `normal.txt` و `sub.txt`
 - `normal.txt` : خروجی خوانا (هر لینک یک خط)
 - `sub.txt` : خروجی Base64 از محتوای `normal.txt`
+- `splitted-by-protocol/vless.txt` و `splitted-by-protocol/sub-vless.txt` : خروجی پروتکل VLESS
+- `splitted-by-protocol/vmess.txt` و `splitted-by-protocol/sub-vmess.txt` : خروجی پروتکل VMESS
+- `splitted-by-protocol/trojan.txt` و `splitted-by-protocol/sub-trojan.txt` : خروجی پروتکل TROJAN
 - `.github/workflows/update.yml` : اجرای زمان‌بندی شده + دستی
 
 ## پیش‌نیازها
@@ -14,7 +17,7 @@
 
 ## راه‌اندازی قدم‌به‌قدم
 1. ریپو را بسازید و این فایل‌ها را اضافه کنید.
-2. در ریشه ریپو دستور زیر را اجرا کنید تا `normal.txt` و `sub.txt` تولید شود:
+2. در ریشه ریپو دستور زیر را اجرا کنید تا همه خروجی‌ها (از جمله Splitted-By-Protocol) تولید شود:
    ```bash
    npm install
    node scripts/fetch.js
