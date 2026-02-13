@@ -9,6 +9,7 @@ const DEFAULT_USER_AGENT =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 const DEFAULT_NORMAL_OUTPUT_PATH = path.join(process.cwd(), 'normal.txt');
 const DEFAULT_SUB_OUTPUT_PATH = path.join(process.cwd(), 'sub.txt');
+const SPLIT_PROTOCOLS = ['vless', 'vmess', 'trojan'];
 const MAX_PAGE_FETCHES = 20;
 const SHARE_LINK_REGEX = /^\s*(vmess|vless|trojan|ss|ssr):\/\/\S+/gim;
 const VMESS_BASE64_REGEX = /^[A-Za-z0-9+/=_-]+$/;
@@ -160,6 +161,16 @@ const buildOutputs = (links) => {
   return { normalContent, subContent };
 };
 
+const getProtocolFromLink = (link) => {
+  const separatorIndex = link.indexOf('://');
+
+  if (separatorIndex === -1) {
+    return null;
+  }
+
+  return link.slice(0, separatorIndex).toLowerCase();
+};
+
 const sanityCheck = (normalContent, subContent) => {
   const decoded = Buffer.from(subContent, 'base64').toString('utf8');
   return decoded === normalContent;
@@ -182,6 +193,19 @@ const fetchHtml = async (channelUrl) => {
 const writeOutputs = async (normalContent, subContent) => {
   await fs.writeFile(DEFAULT_NORMAL_OUTPUT_PATH, normalContent, 'utf8');
   await fs.writeFile(DEFAULT_SUB_OUTPUT_PATH, subContent, 'utf8');
+};
+
+const writeSplitByProtocolOutputs = async (links) => {
+  const splitDirPath = path.join(process.cwd(), 'splitted-by-protocol');
+  await fs.mkdir(splitDirPath, { recursive: true });
+
+  for (const protocol of SPLIT_PROTOCOLS) {
+    const protocolLinks = links.filter((link) => getProtocolFromLink(link) === protocol);
+    const { normalContent, subContent } = buildOutputs(protocolLinks);
+
+    await fs.writeFile(path.join(splitDirPath, `${protocol}.txt`), normalContent, 'utf8');
+    await fs.writeFile(path.join(splitDirPath, `sub-${protocol}.txt`), subContent, 'utf8');
+  }
 };
 
 const parseArgs = (args) => {
@@ -311,7 +335,8 @@ const main = async () => {
     }
 
     await writeOutputs(normalContent, subContent);
-    console.log(`Wrote ${links.length} links to normal.txt and sub.txt.`);
+    await writeSplitByProtocolOutputs(links);
+    console.log(`Wrote ${links.length} links to normal.txt, sub.txt, and protocol-split outputs.`);
   } catch (error) {
     console.error('Failed to generate subscription outputs.');
     console.error(error instanceof Error ? error.message : error);
