@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>SiNAVM | نسل جدید اینترنت آزاد</title>
+    <title>دلقک | نسل جدید اینترنت آزاد</title>
     <meta
       name="description"
-      content="پنل اختصاصی SiNAVM - کانفیگ‌های پرسرعت V2Ray, Sing-Box, WireGuard, Amnezia, AnyConnect"
+      content="پنل اختصاصی دلقک - کانفیگ‌های پرسرعت V2Ray, Sing-Box, WireGuard, Amnezia, AnyConnect"
     />
 
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700;900&display=swap" rel="stylesheet" />
@@ -659,6 +659,41 @@
         font-weight: 500;
       }
 
+
+      .output-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .copy-output-btn {
+        width: 100%;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-main);
+        border-radius: 12px;
+        padding: 12px 10px;
+        font-family: inherit;
+        font-size: 0.8rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .copy-output-btn:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .copy-output-btn:active {
+        transform: scale(0.97);
+      }
+      .disclaimer {
+        line-height: 1.9;
+        font-size: 0.9rem;
+        color: var(--text-main);
+      }
+      .disclaimer a {
+        color: var(--accent);
+        word-break: break-all;
+      }
       .toast {
         position: fixed;
         bottom: 20px;
@@ -691,10 +726,10 @@
     <div class="container">
       <header>
         <div class="logo-wrapper">
-          <img src="https://sinavm.github.io/sinavm/logo/sinavm_logo_1.jpg" alt="SiNAVM" class="logo" />
+          <img src="https://sinavm.github.io/sinavm/logo/sinavm_logo_1.jpg" alt="دلقک" class="logo" />
           <div class="status-dot"></div>
         </div>
-        <h1>SiNAVM <span style="color: var(--primary)">P</span>anel</h1>
+        <h1>پنل <span style="color: var(--primary)">دلقک</span></h1>
         <div class="subtitle"><span>سریع</span><span>•</span><span>امن</span><span>•</span><span>بدون محدودیت</span></div>
       </header>
 
@@ -753,7 +788,7 @@
             <small>ورود به پنل</small>
           </a>
 
-          <a href="https://t.me/sinavm/4714" class="action-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/v2ray_dalghak" class="action-btn" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-rocket"></i>
             <span>Sing-Box</span>
             <small>گزینه اصلی برای سرعت و پایداری</small>
@@ -953,6 +988,31 @@
       </div>
 
       <div class="card">
+        <div class="section-title"><h2><i class="fas fa-copy" style="color: var(--accent); margin-left: 8px"></i>خروجی فایل‌ها</h2></div>
+        <div class="output-grid">
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/splitted-by-protocol/sub-trojan.txt" data-toast-message="sub-trojan.txt کپی شد">sub-trojan.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/splitted-by-protocol/sub-vless.txt" data-toast-message="sub-vless.txt کپی شد">sub-vless.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/splitted-by-protocol/sub-vmess.txt" data-toast-message="sub-vmess.txt کپی شد">sub-vmess.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/splitted-by-protocol/trojan.txt" data-toast-message="trojan.txt کپی شد">trojan.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/splitted-by-protocol/vless.txt" data-toast-message="vless.txt کپی شد">vless.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/splitted-by-protocol/vmess.txt" data-toast-message="vmess.txt کپی شد">vmess.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/sub.txt" data-toast-message="sub.txt کپی شد">sub.txt</button>
+          <button class="copy-output-btn copy-link" data-link="https://skybow044.github.io/dalghaksub/normal.txt" data-toast-message="normal.txt کپی شد">normal.txt</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><h2><i class="fas fa-circle-info" style="color: var(--yellow); margin-left: 8px"></i>توضیحات مهم</h2></div>
+        <div class="disclaimer">
+          🤡این رپو عین اسب و ۲۴ساعته کانفیگ میزاره<br />
+          تبلیغاتی که توی کانال تلگرام میاد ما نمیذاریم تلگرام میذاره و دست ما نیست اصلا.<br />
+          گول نخورید از بات هایی که تو کانال ما تبلیغ میشه خرید نکنید<br />
+          کانال تلگرام :
+          <a href="https://t.me/v2ray_dalghak" target="_blank" rel="noopener noreferrer">https://t.me/v2ray_dalghak</a>
+        </div>
+      </div>
+
+      <div class="card">
         <div class="section-title" style="border: none; padding: 0"><h2>سوالات متداول</h2></div>
         <div style="margin-top: 15px">
           <div class="faq-item">
@@ -975,7 +1035,7 @@
           >|<a href="https://sinavm.github.io/sinavm/legal_pages/terms.html" target="_blank" rel="noopener noreferrer">شرایط استفاده</a>
         </div>
         <div>
-          <a href="https://t.me/sinavm" target="_blank" rel="noopener noreferrer">Design & Config by SiNAVM</a><br />
+          <a href="https://t.me/v2ray_dalghak" target="_blank" rel="noopener noreferrer">Design & Config by دلقک</a><br />
           <div style="margin-top: 5px; font-size: 0.7rem">بازدید کل: <span id="visit-count">...</span></div>
         </div>
       </footer>
@@ -990,7 +1050,7 @@
     </div>
 
     <a href="#" class="scroll-top-btn" id="scrollTopBtn" title="بازگشت به بالا"><i class="fas fa-angle-double-up"></i></a>
-    <a href="https://t.me/sinavm" target="_blank" rel="noopener noreferrer" class="floating-tg-btn" title="کانال تلگرام"
+    <a href="https://t.me/v2ray_dalghak" target="_blank" rel="noopener noreferrer" class="floating-tg-btn" title="کانال تلگرام"
       ><i class="fab fa-telegram-plane"></i
     ></a>
 
