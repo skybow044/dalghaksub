@@ -1,3 +1,2 @@
-trojan://humanity@www.multiplydose.com:443?security=tls&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#v2ray_dalghak-31
-trojan://humanity@104.21.40.34:443?security=tls&sni=www.gossipglove.com&insecure=0&allowInsecure=0&type=ws&host=www.gossipglove.com&path=%2Fassignment#v2ray_dalghak-35
-trojan://humanity@172.64.155.209:443?security=tls&sni=www.gossipglove.com&insecure=0&allowInsecure=0&type=ws&host=www.gossipglove.com&path=%2Fassignment#v2ray_dalghak-36
+trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=1&host=www.creationlong.org&type=ws&allowInsecure=1&sni=www.creationlong.org#v2ray_dalghak-36
+trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#v2ray_dalghak-132
