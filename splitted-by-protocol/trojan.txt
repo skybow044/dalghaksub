@@ -1,7 +1,7 @@
-trojan://721d3fd0-e9f1-40c3-92cd-d4405a4319d6@jjjki.dddct.us.ci:443?alpn=h2&security=tls&serviceName=ElrtQ8CAz6RgfMaQ7PCejkt2o&type=grpc#v2ray_dalghak-08
-trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#v2ray_dalghak-58
-trojan://zp630tdUuD@194.150.166.151:52047?mode=gun&security=reality&pbk=4o28aGSIz_r6Fa9sG7ZjgeT764t3bVJKmC9RDwIff38&fp=chrome&type=grpc&sni=aws.amazon.com&sid=1abe0c286879#v2ray_dalghak-66
-trojan://humanity@104.21.40.34:443?path=%2Fassignment&security=tls&host=www.gossipglove.com&type=ws&sni=www.gossipglove.com#v2ray_dalghak-127
-trojan://Tn2Bf0iRwJkJQgDk6gX6x81RB@94.131.122.254:443?security=tls&sni=hl-freedom-2.undef.network&allowInsecure=1#v2ray_dalghak-150
-trojan://humanity@104.18.32.47:443?path=%2Fassignment&security=tls&insecure=1&host=www.multiplydose.com&type=ws&allowInsecure=1&sni=www.multiplydose.com#v2ray_dalghak-155
-trojan://pYIoKUPGpWeTYXEx3HjR7s97B@free-de-2.undef.network:443?security=tls&type=ws&path=/f2fc2a1f&host=free-de-2.undef.network#v2ray_dalghak-180
+trojan://humanity@104.18.11.110:443?path=%2Fassignment&security=tls&insecure=1&fp=chrome&type=ws&allowInsecure=1&sni=www.multiplydose.com#v2ray_dalghak-49
+trojan://4e45c1b4-9107-45dd-9995-cdf7cbb44d9d@nnmj.1x5.indevs.in:443?alpn=http/1.1&host=nnmj.1x5.indevs.in&path=/y1moM5CyNvYMZlzsYHmsMrnO&security=tls&sni=nnmj.1x5.indevs.in&type=ws#v2ray_dalghak-128
+trojan://humanity@www.gossipglove.com:443?path=%2Fassignment&security=tls&host=www.gossipglove.com&fp=chrome&type=ws&sni=www.gossipglove.com#v2ray_dalghak-134
+trojan://humanity@188.114.98.0:443?path=/assignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#v2ray_dalghak-150
+trojan://humanity@www.creationlong.org:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.creationlong.org#v2ray_dalghak-168
+trojan://721d3fd0-e9f1-40c3-92cd-d4405a4319d6@jjjki.dddct.us.ci:443?alpn=h2&security=tls&serviceName=ElrtQ8CAz6RgfMaQ7PCejkt2o&type=grpc#v2ray_dalghak-171
+trojan://92544946-dea2-4cd9-bd5b-32be565a5a62@bestcdn0.868863.xyz:2096?allowInsecure=1&sni=17718944726671.682637.xyz&type=ws&host=17718944726804.682637.xyz&path=/ahyrtuyjykl#v2ray_dalghak-180
