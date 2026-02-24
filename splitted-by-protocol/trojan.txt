@@ -1,7 +1,8 @@
-trojan://humanity@104.18.11.110:443?path=%2Fassignment&security=tls&insecure=1&fp=chrome&type=ws&allowInsecure=1&sni=www.multiplydose.com#v2ray_dalghak-49
-trojan://4e45c1b4-9107-45dd-9995-cdf7cbb44d9d@nnmj.1x5.indevs.in:443?alpn=http/1.1&host=nnmj.1x5.indevs.in&path=/y1moM5CyNvYMZlzsYHmsMrnO&security=tls&sni=nnmj.1x5.indevs.in&type=ws#v2ray_dalghak-128
-trojan://humanity@www.gossipglove.com:443?path=%2Fassignment&security=tls&host=www.gossipglove.com&fp=chrome&type=ws&sni=www.gossipglove.com#v2ray_dalghak-134
-trojan://humanity@188.114.98.0:443?path=/assignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#v2ray_dalghak-150
-trojan://humanity@www.creationlong.org:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.creationlong.org#v2ray_dalghak-168
-trojan://721d3fd0-e9f1-40c3-92cd-d4405a4319d6@jjjki.dddct.us.ci:443?alpn=h2&security=tls&serviceName=ElrtQ8CAz6RgfMaQ7PCejkt2o&type=grpc#v2ray_dalghak-171
-trojan://92544946-dea2-4cd9-bd5b-32be565a5a62@bestcdn0.868863.xyz:2096?allowInsecure=1&sni=17718944726671.682637.xyz&type=ws&host=17718944726804.682637.xyz&path=/ahyrtuyjykl#v2ray_dalghak-180
+trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.gossipglove.com&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#v2ray_dalghak-09
+trojan://humanity@104.21.40.34:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#v2ray_dalghak-27
+trojan://721d3fd0-e9f1-40c3-92cd-d4405a4319d6@jki.huangdi.indevs.in:443?alpn=h2&security=tls&serviceName=ElrtQ8CAz6RgfMaQ7PCejkt2o&type=grpc#v2ray_dalghak-106
+trojan://1338f666-2fcc-4538-bc29-1ebf89624383@104.21.90.198:443?security=tls&sni=ghj.ok7.ccwu.cc&alpn=http/1.1&type=ws&host=ghj.ok7.ccwu.cc&path=/XCLcnSashhgSVE3HOw1VI85y#v2ray_dalghak-111
+trojan://92544946-dea2-4cd9-bd5b-32be565a5a62@bestcdn0.868863.xyz:2087?allowInsecure=1&sni=17718944724341.682637.xyz&type=ws&host=17718944726551.682637.xyz&path=%2Fahyrtuyjykl#v2ray_dalghak-121
+trojan://humanity@www.gossipglove.com:443?path=/assignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#v2ray_dalghak-126
+trojan://077a4330-7cb0-4d4b-8feb-7ceb3cd43f69@yui9.0ok.ccwu.cc:443?security=tls&sni=yui9.0ok.ccwu.cc&type=ws&host=yui9.0ok.ccwu.cc&path=/WRcZ5LrfKfYKaAHx8c#v2ray_dalghak-141
+trojan://Tn2Bf0iRwJkJQgDk6gX6x81RB@hl-freedom-2.undef.network:443/?type=ws&host=hl-freedom-2.undef.network&path=%2Ff2fc2a1f&security=tls&sni=hl-freedom-2.undef.network&allowInsecure=1#v2ray_dalghak-167
