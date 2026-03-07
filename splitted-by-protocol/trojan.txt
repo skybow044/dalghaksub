@@ -1,7 +1,6 @@
-trojan://telegram-id-privatevpns@13.39.41.207:22222?security=tls&alpn=http%2F1.1&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=trojan.burgerip.co.uk#v2ray_dalghak-248
-trojan://humanity@www.multiplydose.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&type=ws&path=%2Fassignment#v2ray_dalghak-273
-trojan://aBbys5SAo0@my.amadelaziz.shop:9443?security=tls&sni=api.amdelaziz.ir&fp=chrome&headerType=none&allowInsecure=0&alpn=h2,http/1.1&type=tcp#v2ray_dalghak-289
-trojan://humanity@www.multiplydose.com:443?path=%2Fassignment&security=tls&insecure=1&fp=chrome&type=ws&allowInsecure=1&sni=www.multiplydose.com#v2ray_dalghak-455
-trojan://humanity@chatgpt.com:443?path=%2Fassignment&security=tls&host=www.gossipglove.com&fp=chrome&type=ws&sni=www.gossipglove.com#v2ray_dalghak-464
-trojan://telegram-id-privatevpns@35.181.164.194:22222?security=tls&alpn=http%2F1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak-499
-trojan://telegram-id-filtershekanjang@35.181.164.194:22222?security=tls&alpn=http%2F1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk%20#v2ray_dalghak-514
+trojan://telegram-id-privatevpns@13.39.41.207:22222?security=tls&alpn=http%2F1.1&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=trojan.burgerip.co.uk#v2ray_dalghak-233
+trojan://humanity@www.multiplydose.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&type=ws&path=%2Fassignment#v2ray_dalghak-281
+trojan://aBbys5SAo0@my.amadelaziz.shop:9443?security=tls&sni=api.amdelaziz.ir&fp=chrome&headerType=none&allowInsecure=0&alpn=h2,http/1.1&type=tcp#v2ray_dalghak-297
+trojan://humanity@chatgpt.com:443?path=%2Fassignment&security=tls&host=www.gossipglove.com&fp=chrome&type=ws&sni=www.gossipglove.com#v2ray_dalghak-450
+trojan://telegram-id-privatevpns@35.181.164.194:22222?security=tls&alpn=http%2F1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#v2ray_dalghak-485
+trojan://telegram-id-filtershekanjang@35.181.164.194:22222?security=tls&alpn=http%2F1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk%20#v2ray_dalghak-500
