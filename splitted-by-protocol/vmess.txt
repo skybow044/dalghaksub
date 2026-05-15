@@ -1,9 +1,8 @@
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=web.max.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-89
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=web.max.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-91
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=webmode.yota.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-95
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=ozon.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-96
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=api-maps.yandex.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-99
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=api-maps.yandex.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-100
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=ozon.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-105
-vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=webmode.yota.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-113
-vmess://eyJhZGQiOiAid3d3LmFydmFuY2xvdWQuaXIiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiamFudXJheS5oZWx4eC5pciIsICJpZCI6ICJhMDFmNGNjOS1iMjkwLTRkY2QtYjY4Ny1hZWY4Y2IxMGNlNjUiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL25ld3NlcnZlciIsICJwb3J0IjogIjIwODIiLCAicHMiOiAidjJyYXlfZGFsZ2hhayIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9#node-517
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=web.max.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-41
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=web.max.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-43
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=webmode.yota.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-47
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=ozon.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-48
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=api-maps.yandex.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-51
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=api-maps.yandex.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-52
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=ozon.ru&path=%2FCm8kHyrwYLJ8a4CZTWQa78l9eM&security=none&type=ws#v2ray_dalghak-58
+vmess://44b7a388-21ca-4af0-a16b-01e9e6ef04e1@94.131.105.175:80?encryption=auto&host=webmode.yota.ru&path=%2FCm8kHyrwYLJ8NTQroLv&security=none&type=httpupgrade#v2ray_dalghak-66
