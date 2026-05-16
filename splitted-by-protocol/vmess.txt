@@ -1,1 +1,1 @@
-vmess://e2923bc6-8204-4768-98ea-379d48ea8a7a@heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca:80?encryption=auto&host=heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca&path=%2F1awNzxRSwKsdkPVKP0ZQqlHjt10sp&security=none&type=ws#v2ray_dalghak-138
+vmess://e2923bc6-8204-4768-98ea-379d48ea8a7a@heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca:80?encryption=auto&host=heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca&path=%2F1awNzxRSwKsdkPVKP0ZQqlHjt10sp&security=none&type=ws#v2ray_dalghak-102
