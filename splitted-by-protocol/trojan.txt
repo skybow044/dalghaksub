@@ -1,3 +1,8 @@
-trojan://tunnel-astrovpn_official103@213.108.198.158:8441#%E2%9C%A8-06
-trojan://tg-dns68@162.159.153.208:443?security=tls&type=ws&sni=vip.putata.eu.org&path=/?ed=2560&host=vip.putata.eu.org#%F0%9F%8C%9F-16
-trojan://b3845d95-c82e-47f8-b626-0f27d861e8f7@los.ydnode.us:443?#%F0%9F%AA%85-17
+trojan://8557692d-c228-48f0-b6f9-50d44d4a2096@104.19.52.181:443?security=tls&type=ws&sni=tjjd.yzyx1.v6.army#%F0%9F%9A%80-18
+trojan://tg-dns68@162.159.152.9:443?security=tls&type=ws&sni=vip.putata.eu.org&path=/?ed=2560&host=vip.putata.eu.org#%F0%9F%8E%89-19
+trojan://MCfPK18reZ@167.233.162.232:8443?security=reality&pbk=xRC1i4yX90IYwJnxtvGMwtu4wy3OEfesePtdXaKkD04&headerType=http&fp=firefox&spx=%2Fnaranv2ray&type=tcp&sni=play.google.com&sid=97#%F0%9F%94%A5-26
+trojan://-------------BanV2ray--------------@oooooooooooooooo-00000000000000000.poki-pakipon.ir:47139?security=reality&sni=yahoo.com&fp=chrome&pbk=2T8W7086SiTW3viiVVNeZCTZjiJ-d8f6LsSSJZ_iM2o&sid=6239&type=grpc#%F0%9F%8F%8E%EF%B8%8F-28
+trojan://-------------BanV2ray--------------@oooooooooooooooo-00000000000000000.poki-pakipon.ir:50491?security=reality&sni=yahoo.com&fp=chrome&pbk=2T8W7086SiTW3viiVVNeZCTZjiJ-d8f6LsSSJZ_iM2o&sid=d945&type=grpc#%F0%9F%8E%80-31
+trojan://tunnel-astrovpn_official103@213.108.198.158:8441#%E2%9C%A8-43
+trojan://tg-dns68@162.159.153.208:443?security=tls&type=ws&sni=vip.putata.eu.org&path=/?ed=2560&host=vip.putata.eu.org#%F0%9F%8C%9F-50
+trojan://b3845d95-c82e-47f8-b626-0f27d861e8f7@los.ydnode.us:443?#%F0%9F%AA%85-51
