@@ -1,8 +1,9 @@
-trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@104.16.79.73:443?type=ws&path=%2Fsg-orcl&security=tls&sni=space.byu.id.yxls.eu.cc&fp=chrome#%F0%9F%9B%A9%EF%B8%8F-20
-trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@104.16.63.25:443?type=ws&path=%2Fsg-orcl&security=tls&sni=space.byu.id.yxls.eu.cc&fp=chrome#%F0%9F%AA%85-22
-trojan://humanity@104.16.72.2:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%AA%85-117
-trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20065?security=tls&sni=hk.catxstar.com&type=tcp&headerType=none#%F0%9F%8E%A0-167
-trojan://humanity@130.250.137.171:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%A4%B9%E2%80%8D%E2%99%80%EF%B8%8F-197
-trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@104.20.39.109:443?allowInsecure=1&host=space.byu.id.yxls.eu.cc&path=%2Fsg-orcl&type=ws#%E2%9C%88%EF%B8%8F-392
-trojan://7e70223b-f331-41d5-9313-02b8d2df2885@kkvlvvq-a.catcat321.com:20065?sni=hk.catxstar.com#%F0%9F%A4%B9%E2%80%8D%E2%99%80%EF%B8%8F-410
-trojan://c857562678594197@saj2000e.pacemakere.com:20063?allowInsecure=1#%F0%9F%92%A8-589
+trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@104.16.79.73:443?type=ws&path=%2Fsg-orcl&security=tls&sni=space.byu.id.yxls.eu.cc&fp=chrome#%F0%9F%9B%A9%EF%B8%8F-02
+trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@104.16.63.25:443?type=ws&path=%2Fsg-orcl&security=tls&sni=space.byu.id.yxls.eu.cc&fp=chrome#%F0%9F%AA%85-04
+trojan://humanity@104.16.72.2:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%AA%85-99
+trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20065?security=tls&sni=hk.catxstar.com&type=tcp&headerType=none#%F0%9F%8E%A0-149
+trojan://humanity@104.18.152.219:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%93%A1-151
+trojan://humanity@130.250.137.171:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%A4%B9%E2%80%8D%E2%99%80%EF%B8%8F-176
+trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@104.20.39.109:443?allowInsecure=1&host=space.byu.id.yxls.eu.cc&path=%2Fsg-orcl&type=ws#%E2%9C%88%EF%B8%8F-373
+trojan://7e70223b-f331-41d5-9313-02b8d2df2885@kkvlvvq-a.catcat321.com:20065?sni=hk.catxstar.com#%F0%9F%A4%B9%E2%80%8D%E2%99%80%EF%B8%8F-391
+trojan://c857562678594197@saj2000e.pacemakere.com:20063?allowInsecure=1#%F0%9F%92%A8-580
